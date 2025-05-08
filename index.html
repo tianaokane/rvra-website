@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Roe Valley Residents Association</title>
+  <link href="https://fonts.googleapis.com/css2?family=Atma:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --blue: #00a2ed;
+      --green: #88b437;
+      --yellow-green: #c3d011;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    header {
+      background-color: var(--blue);
+      color: white;
+      padding: 1rem;
+    }
+
+    header h1 {
+      font-family: 'Atma', cursive;
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: var(--green);
+    }
+
+    nav a {
+      color: white;
+      padding: 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background-color: var(--yellow-green);
+    }
+
+    .hero {
+      background: url('banner.jpg') no-repeat center center/cover;
+      color: white;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 1rem;
+    }
+
+    .section {
+      padding: 2rem;
+    }
+
+    .section h3 {
+      font-family: 'Atma', cursive;
+      font-size: 1.5rem;
+      color: var(--blue);
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      background-color: var(--blue);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+
+      .hero h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Roe Valley Residents Association</h1>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#youth">Youth</a>
+    <a href="#adults">Adults</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="hero">
+    <h2>Supporting the Limavady Community</h2>
+  </div>
+
+  <section class="section" id="about">
+    <h3>About Us</h3>
+    <p>RVRA exists to improve quality of life for Limavady residents. We are committed to respect, inclusiveness, integrity, and equality in everything we do.</p>
+  </section>
+
+  <section class="section" id="services">
+    <h3>Our Services</h3>
+    <p>We deliver support across education, health, environment, and social engagement. Our facilities include The Community House and the Youth & Community Hub.</p>
+  </section>
+
+  <section class="section" id="youth">
+    <h3>For Children & Young People</h3>
+    <ul>
+      <li>Homework Support & Kids Klub</li>
+      <li>Drop-ins & Structured Programmes</li>
+      <li>Summer Schemes & Good Relations Projects</li>
+    </ul>
+  </section>
+
+  <section class="section" id="adults">
+    <h3>For Adults</h3>
+    <ul>
+      <li>Craft Clubs & Over-50s Social Group</li>
+      <li>Educational Classes</li>
+      <li>Good Relations Projects & Luncheon Clubs</li>
+    </ul>
+  </section>
+
+  <section class="section" id="contact">
+    <h3>Contact Us</h3>
+    <p><strong>Address:</strong> The Community House, 13-14 Keady Way, Limavady, Co Derry, BT49 0AU</p>
+    <p><strong>Phone:</strong> 028 7776 9996</p>
+    <p><strong>Contact Person:</strong> Karen Campbell</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Roe Valley Residents Association</p>
+  </footer>
+</body>
+
+</html>
