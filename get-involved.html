@@ -1,9 +1,9 @@
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+    <link rel="icon" href="images/rvra-logos/favicon-64x64.png" type="image/png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Get Involved | RVRA</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Atma:wght@400;500;700&display=swap" rel="stylesheet">
@@ -14,10 +14,74 @@
   <main class="section">
     <h1>Get Involved</h1>
     <p>Learn how to volunteer, join a project, or refer yourself using our short quiz or form.</p>
+
+    <div class="form-wrapper">
+      <h2>Self-Referral Form</h2>
+      <p>Fill out this quick form to get connected with one of our projects or find support that suits you.</p>
+
+      <form class="referral-form" id="referralForm">
+
+        <label for="name">Name*</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="age">Age*</label>
+        <input type="number" id="age" name="age" required>
+
+        <label for="contact">Email or Phone*</label>
+        <input type="text" id="contact" name="contact" required>
+
+        <label for="interest">What are you interested in?</label>
+        <select id="interest" name="interest">
+          <option value="">-- Please choose an option --</option>
+          <option value="youth-programmes">Youth Programmes</option>
+          <option value="volunteering">Volunteering / DofE</option>
+          <option value="community-support">Community Support</option>
+          <option value="employment-training">Employment / Training</option>
+          <option value="just-curious">Just want to learn more</option>
+        </select>
+
+        <label for="message">Additional Notes (optional)</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <button type="submit" class="cta-button">Submit</button>
+      </form>
+
+      <div id="form-success" class="form-success hidden">
+  <h3>Thank you for getting in touch!</h3>
+  <p>We’ll be in touch soon — in the meantime, check us out on:</p>
+  <div class="social-buttons">
+    <a href="https://www.facebook.com/roevalley.residents/" target="_blank" rel="noopener noreferrer">Facebook</a> |
+    <a href="https://www.instagram.com/rvralimavady/" target="_blank" rel="noopener noreferrer">Instagram</a> |
+    <a href="https://x.com/rvra_limavady" target="_blank" rel="noopener noreferrer">Twitter</a>
+  </div>
+</div>
+
+    </div>
   </main>
 
   <div id="footer"></div>
   <script src="scripts/includes.js"></script>
   <script src="scripts/menu.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+<script>
+  const form = document.getElementById("referralForm");
+  const successMessage = document.getElementById("form-success");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault(); // prevent actual submission
+    form.classList.add("hidden");
+    successMessage.classList.remove("hidden");
+
+    // 🎉 Confetti celebration
+    confetti({
+      particleCount: 100,
+      spread: 80,
+      origin: { y: 0.6 },
+    });
+  });
+</script>
+
 </body>
 </html>

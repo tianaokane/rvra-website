@@ -1,95 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="icon" href="images/rvra-logos/favicon-64x64.png" type="image/png">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Roe Valley Residents Association</title>
   <link href="https://fonts.googleapis.com/css2?family=Atma:wght@400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
   <div id="header"></div>
 
-  <section class="hero">
-    <h2>Welcome to Roe Valley Residents Association</h2>
-    <p>Empowering our community through engagement, support, and shared vision.</p>
-    <button class="cta-button">Join Us</button>
+  <!-- Hero Banner -->
+  <section class="hero-banner">
+    <div class="hero-text">
+      <h1>Empowering Community in Limavady</h1>
+      <p>RVRA supports people of all ages with inclusive programmes, events, and community-led change.</p>
+      <div class="hero-buttons">
+        <a href="get-involved.html" class="cta-button">Get Involved</a>
+        <a href="about-us.html" class="cta-button secondary">Learn More</a>
+      </div>
+    </div>
   </section>
 
-  <div class="carousel">
-    <div class="slides" id="slides">
-      <div class="slide"><img src="https://via.placeholder.com/960x400?text=Community+Event+1" alt="Slide 1"></div>
-      <div class="slide"><img src="https://via.placeholder.com/960x400?text=Volunteer+Project" alt="Slide 2"></div>
-      <div class="slide"><img src="https://via.placeholder.com/960x400?text=Neighborhood+Celebration" alt="Slide 3"></div>
-    </div>
-    <div class="carousel-buttons">
-      <button onclick="prevSlide()">&#10094;</button>
-      <button onclick="nextSlide()">&#10095;</button>
-    </div>
+  <!-- Image Carousel -->
+<div class="carousel">
+  <div class="slides" id="slides">
+    <div class="slide"><img src="images/carousel/community-event.jpg" alt="Community Event"></div>
+    <div class="slide"><img src="images/carousel/volunteer-project.jpg" alt="Volunteer Project"></div>
+    <div class="slide"><img src="images/carousel/neighbourhood-day.jpg" alt="Neighbourhood Celebration"></div>
   </div>
+  <div class="carousel-buttons">
+    <button onclick="prevSlide()">&#10094;</button>
+    <button onclick="nextSlide()">&#10095;</button>
+  </div>
+</div>
 
-  <section class="section" id="about">
-    <h2>About Us</h2>
-    <p>The Roe Valley Residents Association is dedicated to enhancing the lives of residents in our community through advocacy, events, and initiatives that reflect our values and goals.</p>
+
+  <!-- Intro Tiles -->
+  <section class="section intro-tiles">
+    <div class="tile">
+      <h3>About Us</h3>
+      <p>We’re a community organisation building connections through support, creativity and compassion.</p>
+      <a href="about-us.html" class="cta-button small">Meet RVRA</a>
+    </div>
+    <div class="tile">
+      <h3>Our Projects</h3>
+      <p>From youth initiatives to skills training, explore what’s happening in your community.</p>
+      <a href="our-projects.html" class="cta-button small">View Projects</a>
+    </div>
+    <div class="tile">
+      <h3>Join Us</h3>
+      <p>Self-refer, volunteer, or just find something that’s right for you.</p>
+      <a href="get-involved.html" class="cta-button small">Start Here</a>
+    </div>
   </section>
 
-  <section class="section" id="events">
-    <h2>Upcoming Events</h2>
-    <p>Check back soon for updates on our community events and how you can take part.</p>
+  <!-- Testimonials -->
+  <section class="section testimonials-preview">
+    <h2>What People Say</h2>
+    <div class="testimonial">
+      <p>“I found confidence and friendship through RVRA’s youth programme.”</p>
+      <span>– Liam, 17</span>
+    </div>
+    <div class="testimonial">
+      <p>“Being involved in the community again changed my life.”</p>
+      <span>– Teresa, 45</span>
+    </div>
+    <a href="testimonials.html" class="cta-button small">Read More Stories</a>
   </section>
 
-  <section class="section" id="get-involved">
-    <h2>Get Involved</h2>
-    <p>Whether you're looking to volunteer, attend a meeting, or contribute to our initiatives, there's a place for you at RVRA.</p>
+  <!-- Final CTA -->
+  <section class="section homepage-cta">
+    <h2>Be Part of the Change</h2>
+    <p>From volunteering to community action, there’s something for everyone.</p>
+    <a href="get-involved.html" class="cta-button">Get Involved</a>
   </section>
 
-  <section class="section" id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: info@rvra.org.uk<br>Phone: 028 1234 5678</p>
-  </section>
- 
   <div id="footer"></div>
-
-  <!-- Load dynamic header/footer script -->
-  <script src="scripts/includes.js"></script>
-
-  <script>
-    let index = 0;
-    const slides = document.getElementById("slides");
-
-    function showSlide(i) {
-      index = (i + 3) % 3;
-      slides.style.transform = `translateX(-${index * 100}%)`;
-    }
-
-    function nextSlide() {
-      showSlide(index + 1);
-    }
-
-    function prevSlide() {
-      showSlide(index - 1);
-    }
-
-    setInterval(nextSlide, 5000); // Auto-rotate every 5 seconds
-
-    // Mobile menu toggle
-    const menuBtn = document.getElementById('menuBtn');
-    const closeBtn = document.getElementById('closeBtn');
-    const mobileMenu = document.getElementById('mobileMenu');
-
-    menuBtn.addEventListener('click', () => {
-      mobileMenu.classList.add('show');
-    });
-
-    closeBtn.addEventListener('click', () => {
-      mobileMenu.classList.remove('show');
-    });
-  </script>
 
   <script src="scripts/includes.js"></script>
   <script src="scripts/menu.js"></script>
+  <script>
+  let index = 0;
+  const slides = document.getElementById("slides");
 
+  function showSlide(i) {
+    index = (i + 3) % 3; // adjust if you add more slides
+    slides.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  function nextSlide() {
+    showSlide(index + 1);
+  }
+
+  function prevSlide() {
+    showSlide(index - 1);
+  }
+
+  setInterval(nextSlide, 5000); // auto-rotate every 5s
+</script>
 
 </body>
 </html>
