@@ -10,7 +10,8 @@
 </head>
 <body>
 
-  <div id="header"></div>
+  <header id="header-placeholder"></header>
+
 
   <!-- Hero Banner -->
   <section class="hero-banner">
@@ -106,6 +107,23 @@
   }
 
   setInterval(nextSlide, 5000); // auto-rotate every 5s
+
+  let startX = 0;
+
+slides.addEventListener('touchstart', (e) => {
+  startX = e.touches[0].clientX;
+}, { passive: true });
+
+slides.addEventListener('touchend', (e) => {
+  const endX = e.changedTouches[0].clientX;
+  const deltaX = endX - startX;
+
+  if (Math.abs(deltaX) > 50) {
+    if (deltaX < 0) nextSlide();
+    else prevSlide();
+  }
+});
+
 </script>
 
 </body>

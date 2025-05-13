@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sticky Header Test</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background-color: #00a2ed;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    main {
+      padding: 2rem;
+      height: 2000px;
+    }
+
+    .logo {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Sticky Header</div>
+    <nav>
+      <a href="#" style="color: white; text-decoration: none;">Link</a>
+    </nav>
+  </header>
+
+  <main>
+    Scroll down to test stickiness. This header should stay visible at the top.
+  </main>
+
+</body>
+</html>
