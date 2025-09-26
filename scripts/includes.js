@@ -1,7 +1,7 @@
-const validPages = [
+const validPages = new[
   "index.html", "about-us.html", "our-projects.html", "get-involved.html",
   "news-and-events.html", "facilities.html", "our-story.html",
-  "maries-fund.html", "our-team.html"
+  "maries-fund.html", "our-team.html", "projects/lotus-project.html"
 ];
 
 const path = window.location.pathname.split("/").pop();
