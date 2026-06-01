@@ -1,27 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Home | Roe Valley Residents Association</title>
-  <meta name="description" content="RVRA supports people of all ages in Limavady with inclusive programmes, community events, and grassroots action." />
-  <link rel="icon" href="images/rvra-logos/favicon-64x64.png" type="image/png" />
-  <link href="https://fonts.googleapis.com/css2?family=Atma:wght@400;500;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="RVRA supports people of all ages in Limavady with inclusive programmes, community events, and grassroots action."/>
+  <link rel="icon" href="images/rvra-logos/favicon-32x32.png" type="image/png"/>
+  <link href="https://fonts.googleapis.com/css2?family=Atma:wght@400;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
 
-<!-- ═══════════════════════════════════════════════════════════
-     HEADER
-════════════════════════════════════════════════════════════ -->
+<!-- ── HEADER ────────────────────────────────────────────── -->
 <header class="site-header">
   <div class="header-inner">
-    <a href="index.html" class="logo">
-      <img src="images/rvra-logos/rvra-logo.png" alt="RVRA Logo" />
-      <div class="logo-text">
-        <strong>Roe Valley</strong>
-        <span>Residents Association</span>
-      </div>
+    <a href="index.html" class="logo" aria-label="RVRA Home">
+      <img src="images/rvra-logos/rvra-logo.png" alt="Roe Valley Residents Association"/>
     </a>
     <nav class="desktop-nav" aria-label="Main navigation">
       <ul>
@@ -31,7 +25,7 @@
         <li><a href="our-team.html">Our Team</a></li>
         <li><a href="facilities.html">Facilities</a></li>
         <li><a href="news-and-events.html">News &amp; Events</a></li>
-        <li><a href="get-involved.html" class="nav-cta">Get Involved</a></li>
+        <li><a href="get-involved.html" class="nav-cta-btn">Get Involved</a></li>
       </ul>
     </nav>
     <button class="mobile-menu-btn" aria-label="Open menu" onclick="openMenu()">
@@ -39,6 +33,7 @@
     </button>
   </div>
 </header>
+
 <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
   <button class="close-btn" aria-label="Close menu" onclick="closeMenu()">&times;</button>
   <ul>
@@ -57,357 +52,255 @@
   </div>
 </nav>
 
-<!-- ═══════════════════════════════════════════════════════════
-     1. HERO
-════════════════════════════════════════════════════════════ -->
+<!-- ── HERO ──────────────────────────────────────────────── -->
 <section class="hero">
+  <div class="hero-bg-glow"></div>
+  <div class="hero-grid-pattern"></div>
   <div class="hero-inner">
-    <img src="images/rvra-logos/rvra-logo.png" alt="RVRA" class="hero-logo" />
-    <h1>Empowering Community<br>in Limavady</h1>
-    <p>We bring people together through inclusive programmes, creative projects, and genuine care — for every age, every background, every need.</p>
-    <div class="hero-buttons">
-      <a href="get-involved.html" class="btn btn-outline">Get Involved</a>
-      <a href="about-us.html" class="btn btn-primary">Learn More</a>
+    <div class="hero-text">
+      <div class="hero-tag">Limavady, Northern Ireland</div>
+      <h1>Building a stronger<br><em>community</em>,<br>together.</h1>
+      <p class="hero-sub">We support people of all ages through inclusive programmes, creative projects, and genuine care — because everyone deserves to feel valued.</p>
+      <div class="hero-actions">
+        <a href="get-involved.html" class="btn btn-primary btn-lg">Get Involved</a>
+        <a href="about-us.html" class="btn btn-outline-white btn-lg">Learn More</a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <div class="hero-stat-num" data-target="1200">0</div>
+          <div class="hero-stat-label">People supported yearly</div>
+        </div>
+        <div>
+          <div class="hero-stat-num" data-target="25">0</div>
+          <div class="hero-stat-label">Years in the community</div>
+        </div>
+        <div>
+          <div class="hero-stat-num" data-target="80">0</div>
+          <div class="hero-stat-label">Volunteers</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-logo-wrap">
+        <img src="images/rvra-logos/rvra-logo.png" alt="RVRA"/>
+      </div>
+      <div class="hero-badge">Est. 1998 · Limavady</div>
     </div>
   </div>
 </section>
 
-<!-- Wave -->
-<div class="wave">
-  <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z" fill="#f5f8fa"/>
-  </svg>
-</div>
-
-<!-- ═══════════════════════════════════════════════════════════
-     2. STATS STRIP
-════════════════════════════════════════════════════════════ -->
-<section class="stats-strip">
-  <div class="container">
-    <div class="stats-grid">
-      <div class="stat-item">
-        <div class="stat-number" data-target="1200">0</div>
-        <div class="stat-label">People Supported Each Year</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-number" data-target="25">0</div>
-        <div class="stat-label">Years Serving Limavady</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-number" data-target="12">0</div>
-        <div class="stat-label">Active Projects &amp; Programmes</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-number" data-target="80">0</div>
-        <div class="stat-label">Dedicated Volunteers</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════════
-     3. ABOUT PREVIEW
-════════════════════════════════════════════════════════════ -->
-<section class="section about-preview">
+<!-- ── ABOUT PREVIEW ─────────────────────────────────────── -->
+<section class="section about-section">
   <div class="container">
     <div class="two-col">
       <div class="about-text">
-        <span class="section-label">Who We Are</span>
+        <span class="eyebrow">Who We Are</span>
         <h2>A community centre built on care, connection, and action</h2>
-        <p>The Roe Valley Residents Association (RVRA) is a community-led charity based in Limavady. Since 1998 we've been the place people turn to — for support, for opportunity, and for each other.</p>
-        <p>From youth programmes to skills training, from crisis support to celebration, we're here for every chapter of community life.</p>
-        <div style="display:flex; gap:1rem; flex-wrap:wrap; margin-top:1.5rem;">
+        <p>The Roe Valley Residents Association is a community-led charity that has been the heartbeat of Limavady since 1998. We're the place people turn to — for support, for opportunity, and for each other.</p>
+        <p>From youth programmes to crisis support, from skills training to celebration — every part of what we do is shaped by the people we serve.</p>
+        <div class="about-links">
           <a href="about-us.html" class="btn btn-primary">Our Story</a>
           <a href="our-team.html" class="btn btn-outline-blue">Meet the Team</a>
         </div>
       </div>
       <div>
-        <div class="img-placeholder tall" role="img" aria-label="Community gathering photo placeholder">
+        <div class="img-ph h-lg" role="img" aria-label="Community gathering — add your photo here">
           <svg width="48" height="48" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-          <span>Community Gathering Photo</span>
+          <span>Community photo</span>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════════════════
-     4. IMAGE CAROUSEL
-════════════════════════════════════════════════════════════ -->
-<section style="background:var(--off-white); padding: 1rem 1.5rem 4rem;">
+<!-- ── CAROUSEL ──────────────────────────────────────────── -->
+<section style="background:var(--slate);padding:0 0 5rem;">
   <div class="container">
-    <div class="carousel" id="mainCarousel">
+    <div class="carousel" id="mainCarousel" style="max-width:960px;margin:0 auto;">
       <div class="carousel-slides" id="carouselSlides">
         <div class="carousel-slide">
-          <div class="img-placeholder medium" style="border-radius:0; min-height:320px;" role="img" aria-label="Community event photo">
+          <div class="img-ph h-md no-radius" style="min-height:340px;" role="img" aria-label="Community event">
             <svg width="48" height="48" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-            <span>Community Event</span>
+            <span>community-event.jpg</span>
           </div>
         </div>
         <div class="carousel-slide">
-          <div class="img-placeholder medium" style="border-radius:0; min-height:320px;" role="img" aria-label="Volunteer project photo">
+          <div class="img-ph h-md no-radius" style="min-height:340px;" role="img" aria-label="Volunteer project">
             <svg width="48" height="48" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-            <span>Volunteer Project</span>
+            <span>volunteer-project.jpg</span>
           </div>
         </div>
         <div class="carousel-slide">
-          <div class="img-placeholder medium" style="border-radius:0; min-height:320px;" role="img" aria-label="Neighbourhood celebration photo">
+          <div class="img-ph h-md no-radius" style="min-height:340px;" role="img" aria-label="Neighbourhood celebration">
             <svg width="48" height="48" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-            <span>Neighbourhood Celebration</span>
+            <span>neighbourhood-day.jpg</span>
           </div>
         </div>
       </div>
-      <button class="carousel-btn prev" onclick="carouselMove(-1)" aria-label="Previous slide">&#10094;</button>
-      <button class="carousel-btn next" onclick="carouselMove(1)" aria-label="Next slide">&#10095;</button>
+      <button class="carousel-btn prev" onclick="carouselMove(-1)" aria-label="Previous">&#10094;</button>
+      <button class="carousel-btn next" onclick="carouselMove(1)" aria-label="Next">&#10095;</button>
       <div class="carousel-dots" id="carouselDots">
-        <button class="carousel-dot active" onclick="carouselGo(0)" aria-label="Slide 1"></button>
-        <button class="carousel-dot" onclick="carouselGo(1)" aria-label="Slide 2"></button>
-        <button class="carousel-dot" onclick="carouselGo(2)" aria-label="Slide 3"></button>
+        <button class="carousel-dot active" onclick="carouselGo(0)"></button>
+        <button class="carousel-dot" onclick="carouselGo(1)"></button>
+        <button class="carousel-dot" onclick="carouselGo(2)"></button>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════════════════
-     5. PROJECTS
-════════════════════════════════════════════════════════════ -->
+<!-- ── PROJECTS ───────────────────────────────────────────── -->
 <section class="section projects-section">
   <div class="container">
-    <div class="section-header text-center">
-      <span class="section-label green">What We Do</span>
-      <h2>Our Programmes &amp; Projects</h2>
-      <p style="color:var(--text-muted); max-width:560px; margin:0.5rem auto 0;">Our work is shaped by the people we serve. Every programme grows from a real need in our community.</p>
-    </div>
+    <span class="eyebrow white">What We Do</span>
+    <h2>Our Programmes &amp; Projects</h2>
+    <p class="section-intro">Every programme grows from a real need in our community — shaped by listening, built by action.</p>
     <div class="projects-grid">
 
       <div class="project-card">
-        <div class="card-img">
-          <div class="img-placeholder short" role="img" aria-label="Lotus Project photo">
-            <svg width="36" height="36" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-          </div>
-        </div>
-        <div class="card-body">
-          <span class="tag tag-youth">Youth</span>
-          <h3>The Lotus Project</h3>
-          <p>Start the Adventure — opportunities for young people to connect, learn, and grow together in a safe and supportive space.</p>
-          <a href="our-projects.html" class="btn btn-outline-blue btn-sm">Learn More</a>
-        </div>
+        <div class="card-img"><div class="img-ph h-sm no-radius" role="img" aria-label="Lotus Project"><svg width="36" height="36" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg></div></div>
+        <div class="card-body"><span class="tag tag-youth">Youth</span><h3>The Lotus Project</h3><p>Start the Adventure — connecting, learning, and growing together in a safe and welcoming space.</p><a href="our-projects.html" class="btn btn-outline-white btn-sm">Learn More</a></div>
       </div>
 
       <div class="project-card">
-        <div class="card-img">
-          <div class="img-placeholder short" role="img" aria-label="HeadStart project photo">
-            <svg width="36" height="36" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-          </div>
-        </div>
-        <div class="card-body">
-          <span class="tag tag-employment">Employment</span>
-          <h3>HeadStart</h3>
-          <p>Learn, Earn, and have Fun — building real employability skills through hands-on experience and mentorship.</p>
-          <a href="our-projects.html" class="btn btn-outline-blue btn-sm">Learn More</a>
-        </div>
+        <div class="card-img"><div class="img-ph h-sm no-radius" role="img" aria-label="HeadStart"><svg width="36" height="36" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg></div></div>
+        <div class="card-body"><span class="tag tag-employment">Employment</span><h3>HeadStart</h3><p>Learn, Earn, and have Fun — real employability skills through hands-on experience and mentorship.</p><a href="our-projects.html" class="btn btn-outline-white btn-sm">Learn More</a></div>
       </div>
 
       <div class="project-card">
-        <div class="card-img">
-          <div class="img-placeholder short" role="img" aria-label="YouthStart project photo">
-            <svg width="36" height="36" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-          </div>
-        </div>
-        <div class="card-body">
-          <span class="tag tag-youth">Youth</span>
-          <h3>YouthStart</h3>
-          <p>Supporting transitions into education, training, or employment for young people who need a helping hand forward.</p>
-          <a href="our-projects.html" class="btn btn-outline-blue btn-sm">Learn More</a>
-        </div>
+        <div class="card-img"><div class="img-ph h-sm no-radius" role="img" aria-label="YouthStart"><svg width="36" height="36" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg></div></div>
+        <div class="card-body"><span class="tag tag-youth">Youth</span><h3>YouthStart</h3><p>Supporting transitions into education, training, or employment for young people who need it most.</p><a href="our-projects.html" class="btn btn-outline-white btn-sm">Learn More</a></div>
       </div>
 
       <div class="project-card">
-        <div class="card-img">
-          <div class="img-placeholder short" role="img" aria-label="DofE project photo">
-            <svg width="36" height="36" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-          </div>
-        </div>
-        <div class="card-body">
-          <span class="tag tag-youth">Volunteering</span>
-          <h3>Duke of Edinburgh</h3>
-          <p>We're an approved DofE operator, helping young people achieve Bronze, Silver, and Gold awards through volunteering and challenge.</p>
-          <a href="our-projects.html" class="btn btn-outline-blue btn-sm">Learn More</a>
-        </div>
+        <div class="card-img"><div class="img-ph h-sm no-radius" role="img" aria-label="Duke of Edinburgh"><svg width="36" height="36" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg></div></div>
+        <div class="card-body"><span class="tag tag-youth">Volunteering</span><h3>Duke of Edinburgh</h3><p>Approved DofE operator supporting Bronze, Silver and Gold awards through volunteering and challenge.</p><a href="our-projects.html" class="btn btn-outline-white btn-sm">Learn More</a></div>
       </div>
 
       <div class="project-card">
-        <div class="card-img">
-          <div class="img-placeholder short" role="img" aria-label="Community support photo">
-            <svg width="36" height="36" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-          </div>
-        </div>
-        <div class="card-body">
-          <span class="tag tag-wellbeing">Wellbeing</span>
-          <h3>Community Support</h3>
-          <p>Practical and emotional support for families and individuals — from food assistance to crisis referrals and mental health check-ins.</p>
-          <a href="our-projects.html" class="btn btn-outline-blue btn-sm">Learn More</a>
-        </div>
+        <div class="card-img"><div class="img-ph h-sm no-radius" role="img" aria-label="Community Support"><svg width="36" height="36" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg></div></div>
+        <div class="card-body"><span class="tag tag-wellbeing">Wellbeing</span><h3>Community Support</h3><p>Food assistance, crisis referrals, mental health check-ins — practical help for people at their most vulnerable.</p><a href="our-projects.html" class="btn btn-outline-white btn-sm">Learn More</a></div>
       </div>
 
       <div class="project-card">
-        <div class="card-img">
-          <div class="img-placeholder short" role="img" aria-label="Marie's Beacon Fund photo">
-            <svg width="36" height="36" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-          </div>
-        </div>
-        <div class="card-body">
-          <span class="tag tag-community">Community Grants</span>
-          <h3>Marie's Beacon Fund</h3>
-          <p>Grants of up to £500 for grassroots groups making a difference in Limavady — in loving memory of Marie McGuinness.</p>
-          <a href="maries-fund.html" class="btn btn-outline-blue btn-sm">Learn More</a>
-        </div>
+        <div class="card-img"><div class="img-ph h-sm no-radius" role="img" aria-label="Marie's Beacon Fund"><svg width="36" height="36" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg></div></div>
+        <div class="card-body"><span class="tag tag-community">Grants</span><h3>Marie's Beacon Fund</h3><p>Community grants up to £500, in loving memory of Marie McGuinness — keeping her light shining.</p><a href="maries-fund.html" class="btn btn-outline-white btn-sm">Learn More</a></div>
       </div>
 
     </div>
-    <div class="text-center mt-2">
-      <a href="our-projects.html" class="btn btn-primary">View All Projects</a>
+    <div style="text-align:center;margin-top:2.5rem;">
+      <a href="our-projects.html" class="btn btn-primary btn-lg">View All Projects</a>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════════════════
-     6. TESTIMONIALS
-════════════════════════════════════════════════════════════ -->
-<section class="testimonials-section">
+<!-- ── TESTIMONIALS ───────────────────────────────────────── -->
+<section class="section testimonials-section" style="background:var(--slate);">
   <div class="container">
-    <div class="section-header text-center">
-      <span class="section-label white">Voices from Our Community</span>
-      <h2 class="text-white">What People Say</h2>
-    </div>
+    <span class="eyebrow navy">Voices from Our Community</span>
+    <h2>What People Say</h2>
     <div class="testimonials-grid">
       <div class="testimonial-card">
-        <div class="quote-mark">"</div>
+        <div class="quote-icon">"</div>
         <p>I found confidence and friendship through RVRA's youth programme. I wouldn't be where I am today without their support.</p>
-        <span class="attribution">— Liam, 17</span>
+        <span class="attr">— Liam, 17</span>
       </div>
-      <div class="testimonial-card">
-        <div class="quote-mark">"</div>
-        <p>Being involved in the community again changed my life. RVRA gave me a reason to get up in the morning and people who actually care.</p>
-        <span class="attribution">— Teresa, 45</span>
+      <div class="testimonial-card green-top">
+        <div class="quote-icon" style="color:var(--green);">"</div>
+        <p>Being involved in the community again changed my life. RVRA gave me a reason to get up in the morning and people who genuinely care.</p>
+        <span class="attr">— Teresa, 45</span>
       </div>
-      <div class="testimonial-card">
-        <div class="quote-mark">"</div>
-        <p>The HeadStart programme helped me get my first real job. The team were brilliant — patient, encouraging, and genuinely invested in us.</p>
-        <span class="attribution">— Ryan, 22</span>
+      <div class="testimonial-card yg-top">
+        <div class="quote-icon" style="color:var(--yg);">"</div>
+        <p>HeadStart helped me get my first real job. The team were brilliant — patient, encouraging, and invested in us as people.</p>
+        <span class="attr">— Ryan, 22</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════════════════
-     7. FACILITIES PREVIEW
-════════════════════════════════════════════════════════════ -->
-<section class="section facilities-preview">
+<!-- ── FACILITIES STRIP ───────────────────────────────────── -->
+<section class="section facilities-section">
   <div class="container">
-    <div class="section-header">
-      <span class="section-label">Our Spaces</span>
-      <h2>Community Facilities</h2>
-      <p style="color:var(--text-muted);">Our spaces are open for events, training, support groups, and community gatherings.</p>
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-bottom:0;">
+      <div>
+        <span class="eyebrow">Our Spaces</span>
+        <h2>Community Facilities</h2>
+        <p style="color:var(--text-muted);margin-top:.4rem;">Open for events, training, support groups, and more.</p>
+      </div>
+      <a href="facilities.html" class="btn btn-outline-blue">View All &amp; Book</a>
     </div>
     <div class="facilities-grid">
       <div class="facility-card">
-        <div class="img-placeholder short" role="img" aria-label="Main Hall photo">
-          <svg width="36" height="36" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-        </div>
-        <div class="card-body">
-          <h3>Main Hall</h3>
-          <p>Large flexible space for events, classes, and community gatherings. Includes chairs, tables, and projector access.</p>
-        </div>
+        <div class="img-ph h-xs no-radius" role="img" aria-label="Main Hall"><svg width="32" height="32" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg></div>
+        <div class="card-body"><h3>Main Hall</h3><p>Flexible event space for up to 80 people. Chairs, tables, and projector included.</p></div>
       </div>
       <div class="facility-card">
-        <div class="img-placeholder short" role="img" aria-label="Meeting Room photo">
-          <svg width="36" height="36" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-        </div>
-        <div class="card-body">
-          <h3>Meeting Room</h3>
-          <p>Perfect for workshops or small groups (up to 12 people) with whiteboard and screen. Fully accessible.</p>
-        </div>
+        <div class="img-ph h-xs no-radius" role="img" aria-label="Meeting Room"><svg width="32" height="32" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg></div>
+        <div class="card-body"><h3>Meeting Room</h3><p>Workshops and small groups (up to 12). Whiteboard, screen, great natural light.</p></div>
       </div>
       <div class="facility-card">
-        <div class="img-placeholder short" role="img" aria-label="Community Kitchen photo">
-          <svg width="36" height="36" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-        </div>
-        <div class="card-body">
-          <h3>Community Kitchen</h3>
-          <p>Tea, coffee, and cooking space available for events and wellbeing sessions. Fully accessible.</p>
-        </div>
+        <div class="img-ph h-xs no-radius" role="img" aria-label="Community Kitchen"><svg width="32" height="32" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg></div>
+        <div class="card-body"><h3>Community Kitchen</h3><p>Tea, coffee, and cooking space for events and wellbeing sessions. Fully accessible.</p></div>
       </div>
-    </div>
-    <div class="text-center mt-2">
-      <a href="facilities.html" class="btn btn-outline-blue">View All Facilities &amp; Book a Room</a>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════════════════
-     8. GET INVOLVED CTA BAND
-════════════════════════════════════════════════════════════ -->
-<section class="cta-band">
-  <h2>Be Part of the Change</h2>
-  <p>Whether you want to volunteer, join a programme, or simply find out what's available — there's a place here for you.</p>
-  <a href="get-involved.html" class="btn btn-white">Get Involved Today</a>
+<!-- ── GET INVOLVED BAND ──────────────────────────────────── -->
+<section class="cta-band green-band">
+  <div class="container">
+    <h2>Be Part of the Change</h2>
+    <p>Whether you want to volunteer, join a programme, or simply find out what's available — there's a place here for you.</p>
+    <a href="get-involved.html" class="btn btn-white btn-lg">Get Involved Today</a>
+  </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════════════════
-     9. NEWS & EVENTS PREVIEW
-════════════════════════════════════════════════════════════ -->
-<section class="section news-preview">
+<!-- ── NEWS PREVIEW ───────────────────────────────────────── -->
+<section class="section news-section">
   <div class="container">
-    <div class="section-header">
-      <span class="section-label">Latest From RVRA</span>
-      <h2>News &amp; Upcoming Events</h2>
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-bottom:0;">
+      <div>
+        <span class="eyebrow">Latest From RVRA</span>
+        <h2>News &amp; Upcoming Events</h2>
+      </div>
+      <a href="news-and-events.html" class="btn btn-outline-blue">All News &amp; Events</a>
     </div>
     <div class="news-grid">
       <div class="news-card">
-        <div class="img-placeholder short" role="img" aria-label="Summer fair event photo">
-          <svg width="36" height="36" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-        </div>
+        <div class="img-ph h-sm no-radius" role="img" aria-label="Summer fair"><svg width="36" height="36" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg></div>
         <div class="card-body">
-          <span class="date">📅 20 July 2025</span>
+          <span class="event-date">📅 20 July 2025</span>
           <h3>Summer Community Fair</h3>
-          <p>Join us for games, food, music, and local stalls in Limavady's biggest summer celebration of the year!</p>
+          <p>Games, food, music, and local stalls — Limavady's biggest summer celebration. Free entry for all.</p>
         </div>
       </div>
       <div class="news-card">
-        <div class="img-placeholder short" role="img" aria-label="Youth leadership event photo">
-          <svg width="36" height="36" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-        </div>
+        <div class="img-ph h-sm no-radius" role="img" aria-label="Youth leadership"><svg width="36" height="36" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg></div>
         <div class="card-body">
-          <span class="date">📅 5 August 2025</span>
+          <span class="event-date">📅 5 August 2025</span>
           <h3>Youth Leadership Workshop</h3>
-          <p>For ages 14–18: build confidence, meet new people, and learn leadership skills for the future. Free to attend.</p>
+          <p>For ages 14–18: confidence, connection, and leadership skills that last a lifetime. Free to attend.</p>
         </div>
       </div>
-    </div>
-    <div class="text-center mt-2">
-      <a href="news-and-events.html" class="btn btn-primary">All News &amp; Events</a>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════════════════
-     FOOTER
-════════════════════════════════════════════════════════════ -->
+<!-- ── FOOTER ─────────────────────────────────────────────── -->
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <img src="images/rvra-logos/rvra-logo.png" alt="RVRA Logo" />
-        <p>Empowering community in Limavady through inclusive support, creative programmes, and grassroots action.</p>
+        <img src="images/rvra-logos/rvra-logo.png" alt="RVRA"/>
+        <p>Empowering community in Limavady through inclusive support, creative programmes, and grassroots action since 1998.</p>
         <div class="footer-socials">
           <a href="https://www.facebook.com/roevalley.residents/" target="_blank" rel="noopener">Facebook</a>
           <a href="https://www.instagram.com/rvralimavady/" target="_blank" rel="noopener">Instagram</a>
-          <a href="https://x.com/rvra_limavady" target="_blank" rel="noopener">X / Twitter</a>
+          <a href="https://x.com/rvra_limavady" target="_blank" rel="noopener">Twitter</a>
         </div>
       </div>
       <div class="footer-col">
-        <h4>Quick Links</h4>
+        <h4>Organisation</h4>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about-us.html">About Us</a></li>
@@ -425,9 +318,9 @@
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Contact Us</h4>
+        <h4>Contact</h4>
         <ul>
-          <li><a href="facilities.html">Facilities &amp; Rooms</a></li>
+          <li><a href="facilities.html">Facilities &amp; Booking</a></li>
           <li><a href="news-and-events.html">News &amp; Events</a></li>
           <li><a href="mailto:info@rvra.org.uk">info@rvra.org.uk</a></li>
           <li><a href="tel:02877769996">028 7776 9996</a></li>
@@ -442,51 +335,32 @@
 </footer>
 
 <script>
-  /* ── Mobile menu ── */
   function openMenu()  { document.getElementById('mobileMenu').classList.add('open'); }
   function closeMenu() { document.getElementById('mobileMenu').classList.remove('open'); }
 
-  /* ── Carousel ── */
-  var cIndex = 0, cTotal = 3;
-  function carouselGo(n) {
-    cIndex = n;
-    document.getElementById('carouselSlides').style.transform = 'translateX(-' + (cIndex * 100) + '%)';
-    document.querySelectorAll('.carousel-dot').forEach(function(d, i) {
-      d.classList.toggle('active', i === cIndex);
+  /* Carousel */
+  var cIdx=0,cTotal=3;
+  function carouselGo(n){
+    cIdx=n;
+    document.getElementById('carouselSlides').style.transform='translateX(-'+(cIdx*100)+'%)';
+    document.querySelectorAll('.carousel-dot').forEach(function(d,i){d.classList.toggle('active',i===cIdx);});
+  }
+  function carouselMove(dir){carouselGo((cIdx+dir+cTotal)%cTotal);}
+  setInterval(function(){carouselMove(1);},5000);
+  var swipeX=0,sl=document.getElementById('carouselSlides');
+  sl.addEventListener('touchstart',function(e){swipeX=e.touches[0].clientX;},{passive:true});
+  sl.addEventListener('touchend',function(e){var dx=e.changedTouches[0].clientX-swipeX;if(Math.abs(dx)>50)carouselMove(dx<0?1:-1);});
+
+  /* Animated counters */
+  function runCounters(){
+    document.querySelectorAll('[data-target]').forEach(function(el){
+      var target=parseInt(el.getAttribute('data-target')),start=0,dur=1800,step=target/(dur/16);
+      var t=setInterval(function(){start+=step;if(start>=target){el.textContent=target.toLocaleString()+'+';clearInterval(t);}else{el.textContent=Math.floor(start).toLocaleString()+'+';} },16);
     });
   }
-  function carouselMove(dir) { carouselGo((cIndex + dir + cTotal) % cTotal); }
-  setInterval(function(){ carouselMove(1); }, 5000);
-
-  /* Touch swipe */
-  var swipeStart = 0;
-  var sl = document.getElementById('carouselSlides');
-  sl.addEventListener('touchstart', function(e){ swipeStart = e.touches[0].clientX; }, {passive:true});
-  sl.addEventListener('touchend', function(e){
-    var dx = e.changedTouches[0].clientX - swipeStart;
-    if (Math.abs(dx) > 50) carouselMove(dx < 0 ? 1 : -1);
-  });
-
-  /* ── Animated counters ── */
-  function animateCounters() {
-    document.querySelectorAll('.stat-number[data-target]').forEach(function(el) {
-      var target = parseInt(el.getAttribute('data-target'));
-      var start = 0, duration = 1800;
-      var step = target / (duration / 16);
-      var timer = setInterval(function() {
-        start += step;
-        if (start >= target) { el.textContent = target + '+'; clearInterval(timer); }
-        else { el.textContent = Math.floor(start) + '+'; }
-      }, 16);
-    });
-  }
-  var statsObserver = new IntersectionObserver(function(entries) {
-    entries.forEach(function(e) {
-      if (e.isIntersecting) { animateCounters(); statsObserver.disconnect(); }
-    });
-  }, { threshold: 0.3 });
-  var statsEl = document.querySelector('.stats-strip');
-  if (statsEl) statsObserver.observe(statsEl);
+  var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){runCounters();obs.disconnect();}});},{threshold:.3});
+  var heroStats=document.querySelector('.hero-stats');
+  if(heroStats)obs.observe(heroStats);
 </script>
 </body>
 </html>
