@@ -1,125 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Our Team | RVRA</title>
-  <link rel="icon" href="images/rvra-logos/favicon-64x64.png" type="image/png" />
-  <link href="https://fonts.googleapis.com/css2?family=Atma:wght@400;500;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="images/rvra-logos/favicon-32x32.png" type="image/png"/>
+  <link href="https://fonts.googleapis.com/css2?family=Atma:wght@400;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
+<header class="site-header"><div class="header-inner">
+  <a href="index.html" class="logo"><img src="images/rvra-logos/rvra-logo.png" alt="Roe Valley Residents Association"/></a>
+  <nav class="desktop-nav"><ul>
+    <li><a href="index.html">Home</a></li><li><a href="about-us.html">About Us</a></li>
+    <li><a href="our-projects.html">Projects</a></li><li><a href="our-team.html" class="active">Our Team</a></li>
+    <li><a href="facilities.html">Facilities</a></li><li><a href="news-and-events.html">News &amp; Events</a></li>
+    <li><a href="get-involved.html" class="nav-cta-btn">Get Involved</a></li>
+  </ul></nav>
+  <button class="mobile-menu-btn" aria-label="Open menu" onclick="openMenu()"><span></span><span></span><span></span></button>
+</div></header>
+<nav class="mobile-menu" id="mobileMenu"><button class="close-btn" onclick="closeMenu()">&times;</button><ul>
+  <li><a href="index.html" onclick="closeMenu()">Home</a></li><li><a href="about-us.html" onclick="closeMenu()">About Us</a></li>
+  <li><a href="our-projects.html" onclick="closeMenu()">Projects</a></li><li><a href="our-team.html" onclick="closeMenu()">Our Team</a></li>
+  <li><a href="facilities.html" onclick="closeMenu()">Facilities</a></li><li><a href="news-and-events.html" onclick="closeMenu()">News &amp; Events</a></li>
+  <li><a href="get-involved.html" onclick="closeMenu()">Get Involved</a></li>
+</ul><div class="mobile-socials"><a href="https://www.facebook.com/roevalley.residents/" target="_blank" rel="noopener">Facebook</a><a href="https://www.instagram.com/rvralimavady/" target="_blank" rel="noopener">Instagram</a></div></nav>
 
-<header class="site-header">
-  <div class="header-inner">
-    <a href="index.html" class="logo">
-      <img src="images/rvra-logos/rvra-logo.png" alt="RVRA Logo" />
-      <div class="logo-text"><strong>Roe Valley</strong><span>Residents Association</span></div>
-    </a>
-    <nav class="desktop-nav" aria-label="Main navigation">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about-us.html">About Us</a></li>
-        <li><a href="our-projects.html">Projects</a></li>
-        <li><a href="our-team.html" class="active">Our Team</a></li>
-        <li><a href="facilities.html">Facilities</a></li>
-        <li><a href="news-and-events.html">News &amp; Events</a></li>
-        <li><a href="get-involved.html" class="nav-cta">Get Involved</a></li>
-      </ul>
-    </nav>
-    <button class="mobile-menu-btn" aria-label="Open menu" onclick="openMenu()"><span></span><span></span><span></span></button>
+<nav class="breadcrumb"><div class="container"><a href="index.html">Home</a> <span>›</span> Our Team</div></nav>
+
+<section class="page-hero blue-hero">
+  <div class="container">
+    <span class="eyebrow blue">The People of RVRA</span>
+    <h1>Meet Our Team</h1>
+    <p>Passionate, committed, and community-driven — every person on our team brings something essential to the work we do together.</p>
   </div>
-</header>
-<nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
-  <button class="close-btn" aria-label="Close menu" onclick="closeMenu()">&times;</button>
-  <ul>
-    <li><a href="index.html" onclick="closeMenu()">Home</a></li>
-    <li><a href="about-us.html" onclick="closeMenu()">About Us</a></li>
-    <li><a href="our-projects.html" onclick="closeMenu()">Projects</a></li>
-    <li><a href="our-team.html" onclick="closeMenu()">Our Team</a></li>
-    <li><a href="facilities.html" onclick="closeMenu()">Facilities</a></li>
-    <li><a href="news-and-events.html" onclick="closeMenu()">News &amp; Events</a></li>
-    <li><a href="get-involved.html" onclick="closeMenu()">Get Involved</a></li>
-  </ul>
-</nav>
-
-<nav class="breadcrumb"><a href="index.html">Home</a> <span>›</span> Our Team</nav>
-
-<section class="page-hero">
-  <span class="section-label white">The People of RVRA</span>
-  <h1>Meet Our Team</h1>
-  <p>Passionate, committed, and community-driven — every person on our team brings something essential to the work we do together.</p>
 </section>
 
-<section class="section">
+<section class="section" style="background:var(--white);">
   <div class="container">
     <div class="team-grid">
-
       <div class="team-card">
-        <div class="img-placeholder avatar" role="img" aria-label="Photo of Karen">
-          <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
-        </div>
-        <h3>Karen</h3>
-        <p>Project Manager</p>
+        <div class="img-ph circle" role="img" aria-label="Karen"><svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg></div>
+        <h3>Karen</h3><p>Project Manager</p>
       </div>
-
       <div class="team-card">
-        <div class="img-placeholder avatar" role="img" aria-label="Photo of Jordan">
-          <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
-        </div>
-        <h3>Jordan</h3>
-        <p>Youth Programme Lead</p>
+        <div class="img-ph circle" role="img" aria-label="Jordan"><svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg></div>
+        <h3>Jordan</h3><p>Youth Programme Lead</p>
       </div>
-
       <div class="team-card">
-        <div class="img-placeholder avatar" role="img" aria-label="Photo of Sophie">
-          <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
-        </div>
-        <h3>Sophie</h3>
-        <p>Volunteer Coordinator</p>
+        <div class="img-ph circle" role="img" aria-label="Sophie"><svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg></div>
+        <h3>Sophie</h3><p>Volunteer Coordinator</p>
       </div>
-
-      <!-- Add more team cards here as needed. Copy pattern above. -->
-      <!-- Replace img-placeholder.avatar with <img src="images/staff/NAME.jpg" class="team-avatar" alt="Photo of NAME"> -->
-      <!-- Add CSS: .team-avatar { width:120px; height:120px; border-radius:50%; object-fit:cover; margin:0 auto 1.25rem; } -->
-
     </div>
+    <p style="text-align:center;color:var(--text-muted);margin-top:2rem;font-size:.9rem;">Replace the placeholder circles above with <code>img</code> tags pointing to your staff photos in <code>images/staff/</code></p>
   </div>
 </section>
 
-<!-- Marie tribute -->
 <section class="section" style="background:var(--off-white);">
   <div class="container" style="max-width:820px;">
     <div class="tribute-box">
-      <span class="section-label">In Loving Memory</span>
+      <span class="eyebrow orange">In Loving Memory</span>
       <div class="tribute-name">Marie McGuinness</div>
-      <p>Marie was a beloved part of the RVRA family whose kindness, strength, and commitment to others left a lasting impact on everyone she worked with. She poured her heart into this community and inspired those around her to do the same.</p>
+      <p>Marie was a beloved part of the RVRA family — known for her warmth, her laughter, and her unwavering belief that every person deserves kindness and support.</p>
       <p>We are proud to carry on her legacy through the <strong>Marie McGuinness Beacon Fund</strong>, supporting the causes she held closest to her heart.</p>
-      <a href="maries-fund.html" class="btn btn-outline-blue" style="margin-top:1rem;">Learn About the Fund</a>
+      <a href="maries-fund.html" class="btn btn-outline-orange" style="margin-top:1.5rem;">Learn About the Fund</a>
     </div>
   </div>
 </section>
 
-<section class="cta-band">
-  <h2>Want to Join Our Team?</h2>
-  <p>We're always looking for passionate volunteers and community champions. Get in touch to find out how you can help.</p>
-  <a href="get-involved.html" class="btn btn-white">Get Involved</a>
-</section>
-
-<footer class="site-footer">
+<section class="cta-band blue-band">
   <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand"><img src="images/rvra-logos/rvra-logo.png" alt="RVRA Logo" /><p>Empowering community in Limavady through inclusive support, creative programmes, and grassroots action.</p><div class="footer-socials"><a href="https://www.facebook.com/roevalley.residents/" target="_blank" rel="noopener">Facebook</a><a href="https://www.instagram.com/rvralimavady/" target="_blank" rel="noopener">Instagram</a><a href="https://x.com/rvra_limavady" target="_blank" rel="noopener">X / Twitter</a></div></div>
-      <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about-us.html">About Us</a></li><li><a href="our-story.html">Our Story</a></li><li><a href="our-team.html">Meet the Team</a></li></ul></div>
-      <div class="footer-col"><h4>Get Involved</h4><ul><li><a href="our-projects.html">Our Projects</a></li><li><a href="get-involved.html">Self-Refer</a></li><li><a href="get-involved.html">Volunteer</a></li><li><a href="maries-fund.html">Marie's Beacon Fund</a></li></ul></div>
-      <div class="footer-col"><h4>Contact Us</h4><ul><li><a href="facilities.html">Facilities &amp; Rooms</a></li><li><a href="news-and-events.html">News &amp; Events</a></li><li><a href="mailto:info@rvra.org.uk">info@rvra.org.uk</a></li><li><a href="tel:02877769996">028 7776 9996</a></li></ul></div>
-    </div>
-    <div class="footer-bottom"><span>&copy; 2025 Roe Valley Residents Association. Registered Charity.</span><span><a href="#">Privacy Policy</a> &nbsp;·&nbsp; <a href="#">Accessibility</a></span></div>
+    <h2>Want to Join Our Team?</h2>
+    <p>We're always looking for passionate volunteers and community champions. Get in touch to find out how you can help.</p>
+    <a href="get-involved.html" class="btn btn-white btn-lg">Get Involved</a>
   </div>
-</footer>
+</section>
+
+<div class="footer-top-bar"><div class="container"><span>📞 028 7776 9996 &nbsp;|&nbsp; ✉️ info@rvra.org.uk</span><a href="get-involved.html">Get Involved Today →</a></div></div>
+<footer class="site-footer"><div class="container"><div class="footer-grid">
+  <div class="footer-brand"><img src="images/rvra-logos/rvra-logo.png" alt="RVRA"/><p>Empowering community in Limavady through inclusive support, creative programmes, and grassroots action since 1998.</p><div class="footer-socials"><a href="https://www.facebook.com/roevalley.residents/" target="_blank" rel="noopener">Facebook</a><a href="https://www.instagram.com/rvralimavady/" target="_blank" rel="noopener">Instagram</a><a href="https://x.com/rvra_limavady" target="_blank" rel="noopener">Twitter</a></div></div>
+  <div class="footer-col"><h4>Organisation</h4><ul><li><a href="index.html">Home</a></li><li><a href="about-us.html">About Us</a></li><li><a href="our-story.html">Our Story</a></li><li><a href="our-team.html">Meet the Team</a></li></ul></div>
+  <div class="footer-col"><h4>Get Involved</h4><ul><li><a href="our-projects.html">Our Projects</a></li><li><a href="get-involved.html">Self-Refer</a></li><li><a href="get-involved.html">Volunteer</a></li><li><a href="maries-fund.html">Marie's Beacon Fund</a></li></ul></div>
+  <div class="footer-col"><h4>Contact</h4><ul><li><a href="facilities.html">Facilities &amp; Booking</a></li><li><a href="news-and-events.html">News &amp; Events</a></li><li><a href="mailto:info@rvra.org.uk">info@rvra.org.uk</a></li><li><a href="tel:02877769996">028 7776 9996</a></li></ul></div>
+</div><div class="footer-bottom"><span>&copy; 2025 Roe Valley Residents Association. Registered Charity.</span><span><a href="#">Privacy Policy</a> &nbsp;·&nbsp; <a href="#">Accessibility</a></span></div></div></footer>
 <script>
   function openMenu()  { document.getElementById('mobileMenu').classList.add('open'); }
   function closeMenu() { document.getElementById('mobileMenu').classList.remove('open'); }
 </script>
-</body>
-</html>
+</body></html>
