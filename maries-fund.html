@@ -5,72 +5,135 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Marie's Beacon Fund | RVRA</title>
   <link rel="icon" href="images/rvra-logos/favicon-64x64.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Atma:wght@400;500;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Atma:wght@400;500;700&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <header id="header-placeholder"></header>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <img src="images/rvra-logos/rvra-logo.png" alt="RVRA Logo" />
+      <div class="logo-text"><strong>Roe Valley</strong><span>Residents Association</span></div>
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="our-projects.html" class="active">Projects</a></li>
+        <li><a href="our-team.html">Our Team</a></li>
+        <li><a href="facilities.html">Facilities</a></li>
+        <li><a href="news-and-events.html">News &amp; Events</a></li>
+        <li><a href="get-involved.html" class="nav-cta">Get Involved</a></li>
+      </ul>
+    </nav>
+    <button class="mobile-menu-btn" aria-label="Open menu" onclick="openMenu()"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+  <button class="close-btn" aria-label="Close menu" onclick="closeMenu()">&times;</button>
+  <ul>
+    <li><a href="index.html" onclick="closeMenu()">Home</a></li>
+    <li><a href="about-us.html" onclick="closeMenu()">About Us</a></li>
+    <li><a href="our-projects.html" onclick="closeMenu()">Projects</a></li>
+    <li><a href="our-team.html" onclick="closeMenu()">Our Team</a></li>
+    <li><a href="facilities.html" onclick="closeMenu()">Facilities</a></li>
+    <li><a href="news-and-events.html" onclick="closeMenu()">News &amp; Events</a></li>
+    <li><a href="get-involved.html" onclick="closeMenu()">Get Involved</a></li>
+  </ul>
+</nav>
 
+<nav class="breadcrumb"><a href="index.html">Home</a> <span>›</span> <a href="our-projects.html">Projects</a> <span>›</span> Marie's Beacon Fund</nav>
 
-  <main>
-
-  <!-- Hero Banner -->
-  <section class="beacon-hero-banner">
-    <div class="inner-hero">
-      <h1>Marie's Beacon Fund</h1>
-      <p class="intro">In memory of Marie McGuinness, the Beacon Fund continues her legacy by supporting local groups making a real difference in our community.</p>
-      <div class="beacon-hero-img">
-        <img src="images/projects/maries-beacon-fund.jpg" alt="Marie’s Beacon Fund logo" />
+<!-- Beacon hero -->
+<section class="beacon-hero">
+  <div style="max-width:700px; margin:0 auto;">
+    <span class="section-label">In Memory of Marie McGuinness</span>
+    <h1>Marie's Beacon Fund</h1>
+    <p>Launched by RVRA and the McGuinness family, the Beacon Fund continues Marie's legacy — supporting local groups who are making a real difference in our community.</p>
+    <div class="beacon-logo" style="margin-top:2rem;">
+      <div class="img-placeholder medium" role="img" aria-label="Marie's Beacon Fund logo">
+        <svg width="40" height="40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+        <span>maries-beacon-fund.jpg</span>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Fund Content -->
-  <section class="section">
-    <h2>About the Fund</h2>
-    <p>Launched by RVRA Limavady and the McGuinness family, the Beacon Fund offers community grants to help grassroots organisations improve lives in the Limavady area.</p>
-  </section>
+<!-- Fund details -->
+<section class="section">
+  <div class="container">
+    <div class="fund-details-grid">
 
-  <section class="section">
-    <h2>Who Can Apply?</h2>
-    <ul>
-      <li>Small community groups based in or serving Limavady</li>
-      <li>Projects addressing isolation, poverty, mental health, or local development</li>
-    </ul>
-  </section>
+      <div class="fund-card">
+        <h3>About the Fund</h3>
+        <p>The Beacon Fund offers community grants to help grassroots organisations improve lives in the Limavady area. It was created to honour Marie's tireless commitment to her community — and to ensure her spirit of generosity lives on.</p>
+      </div>
 
-  <section class="section">
-    <h2>Key Details</h2>
-    <ul>
-      <li><strong>Grants Available:</strong> Up to £500 per group</li>
-      <li><strong>Deadline to Apply:</strong> 21 March 2025</li>
-      <li><strong>Results Announced:</strong> 4 April 2025</li>
-    </ul>
-  </section>
+      <div class="fund-card">
+        <h3>Who Can Apply?</h3>
+        <ul>
+          <li>Small community groups based in or serving Limavady</li>
+          <li>Projects addressing isolation, poverty, or mental health</li>
+          <li>Initiatives focused on local development and connection</li>
+          <li>Groups with limited access to other funding streams</li>
+        </ul>
+      </div>
 
-  <!-- Highlight Box for Apply Now -->
-  <section class="apply-highlight">
-    <h2>Apply Now</h2>
-    <p>To request an application form:</p>
-    <p>
-      ✉️ Email: <a href="mailto:thebeaconfund@roevalleyresidentsassociation.org.uk">thebeaconfund@roevalleyresidentsassociation.org.uk</a><br>
-      📞 Phone: 028 7776 9996
-    </p>
-  </section>
+      <div class="fund-card">
+        <h3>Key Details</h3>
+        <ul>
+          <li><strong>Grants Available:</strong> Up to £500 per group</li>
+          <li><strong>Deadline to Apply:</strong> 21 March 2025</li>
+          <li><strong>Results Announced:</strong> 4 April 2025</li>
+          <li><strong>Who Awards It:</strong> RVRA &amp; the McGuinness family</li>
+        </ul>
+      </div>
 
-  <!-- Tribute Quote -->
-  <section class="section tribute-end">
-    <p class="quote">“Marie lit the way for so many. Through the Beacon Fund, her light continues.”</p>
-    <p style="text-align: center;">— Roe Valley Residents Association</p>
-  </section>
+      <div class="fund-card">
+        <h3>Marie's Legacy</h3>
+        <p>Marie McGuinness was a beloved member of the RVRA family — known for her warmth, her laughter, and her unwavering belief that every person deserves kindness and support. The Beacon Fund is her light, continuing to shine.</p>
+      </div>
 
-</main>
+    </div>
 
+    <!-- Apply box -->
+    <div class="apply-box">
+      <h2>Apply Now</h2>
+      <p>To request an application form, contact us directly:</p>
+      <p>📧 <a href="mailto:thebeaconfund@roevalleyresidentsassociation.org.uk">thebeaconfund@roevalleyresidentsassociation.org.uk</a></p>
+      <p>📞 <a href="tel:02877769996">028 7776 9996</a></p>
+    </div>
 
-  <div id="footer"></div>
+    <!-- Tribute quote -->
+    <div class="tribute-quote">
+      <blockquote>"Marie lit the way for so many. Through the Beacon Fund, her light continues."</blockquote>
+      <cite>— Roe Valley Residents Association</cite>
+    </div>
 
-  <script src="scripts/includes.js"></script>
-  <script src="scripts/menu.js"></script>
+  </div>
+</section>
+
+<section class="cta-band" style="background:var(--blue-deep);">
+  <h2>More About Our Projects</h2>
+  <p>The Beacon Fund is one of many ways RVRA supports the Limavady community. Explore everything we do.</p>
+  <a href="our-projects.html" class="btn btn-white">View All Projects</a>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><img src="images/rvra-logos/rvra-logo.png" alt="RVRA Logo" /><p>Empowering community in Limavady through inclusive support, creative programmes, and grassroots action.</p><div class="footer-socials"><a href="https://www.facebook.com/roevalley.residents/" target="_blank" rel="noopener">Facebook</a><a href="https://www.instagram.com/rvralimavady/" target="_blank" rel="noopener">Instagram</a><a href="https://x.com/rvra_limavady" target="_blank" rel="noopener">X / Twitter</a></div></div>
+      <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about-us.html">About Us</a></li><li><a href="our-story.html">Our Story</a></li><li><a href="our-team.html">Meet the Team</a></li></ul></div>
+      <div class="footer-col"><h4>Get Involved</h4><ul><li><a href="our-projects.html">Our Projects</a></li><li><a href="get-involved.html">Self-Refer</a></li><li><a href="get-involved.html">Volunteer</a></li><li><a href="maries-fund.html">Marie's Beacon Fund</a></li></ul></div>
+      <div class="footer-col"><h4>Contact Us</h4><ul><li><a href="facilities.html">Facilities &amp; Rooms</a></li><li><a href="news-and-events.html">News &amp; Events</a></li><li><a href="mailto:info@rvra.org.uk">info@rvra.org.uk</a></li><li><a href="tel:02877769996">028 7776 9996</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>&copy; 2025 Roe Valley Residents Association. Registered Charity.</span><span><a href="#">Privacy Policy</a> &nbsp;·&nbsp; <a href="#">Accessibility</a></span></div>
+  </div>
+</footer>
+<script>
+  function openMenu()  { document.getElementById('mobileMenu').classList.add('open'); }
+  function closeMenu() { document.getElementById('mobileMenu').classList.remove('open'); }
+</script>
 </body>
 </html>

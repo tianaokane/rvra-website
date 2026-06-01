@@ -5,70 +5,142 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Our Story | RVRA</title>
   <link rel="icon" href="images/rvra-logos/favicon-64x64.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Atma:wght@400;500;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Atma:wght@400;500;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header id="header-placeholder"></header>
 
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <img src="images/rvra-logos/rvra-logo.png" alt="RVRA Logo" />
+      <div class="logo-text"><strong>Roe Valley</strong><span>Residents Association</span></div>
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html" class="active">About Us</a></li>
+        <li><a href="our-projects.html">Projects</a></li>
+        <li><a href="our-team.html">Our Team</a></li>
+        <li><a href="facilities.html">Facilities</a></li>
+        <li><a href="news-and-events.html">News &amp; Events</a></li>
+        <li><a href="get-involved.html" class="nav-cta">Get Involved</a></li>
+      </ul>
+    </nav>
+    <button class="mobile-menu-btn" aria-label="Open menu" onclick="openMenu()"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+  <button class="close-btn" aria-label="Close menu" onclick="closeMenu()">&times;</button>
+  <ul>
+    <li><a href="index.html" onclick="closeMenu()">Home</a></li>
+    <li><a href="about-us.html" onclick="closeMenu()">About Us</a></li>
+    <li><a href="our-projects.html" onclick="closeMenu()">Projects</a></li>
+    <li><a href="our-team.html" onclick="closeMenu()">Our Team</a></li>
+    <li><a href="facilities.html" onclick="closeMenu()">Facilities</a></li>
+    <li><a href="news-and-events.html" onclick="closeMenu()">News &amp; Events</a></li>
+    <li><a href="get-involved.html" onclick="closeMenu()">Get Involved</a></li>
+  </ul>
+</nav>
 
-  <main class="section">
-    <h1>Our Story</h1>
-    <p class="intro">Take a walk through the history of RVRA — from a small community idea to a vibrant centre of connection, learning, and change.</p>
+<nav class="breadcrumb"><a href="index.html">Home</a> <span>›</span> <a href="about-us.html">About Us</a> <span>›</span> Our Story</nav>
 
-    <section class="timeline">
+<section class="page-hero">
+  <span class="section-label white">Our History</span>
+  <h1>Our Story</h1>
+  <p>Take a walk through the history of RVRA — from a small community idea to a vibrant centre of connection, learning, and change.</p>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="timeline">
+
       <div class="timeline-item">
-        <span class="timeline-year">1998</span>
+        <div class="timeline-year">1998</div>
         <div class="timeline-content">
           <h3>Founded in Limavady</h3>
-          <p>RVRA began as a grassroots group of residents coming together to support local needs and youth development.</p>
+          <p>RVRA began as a grassroots group of residents coming together to support local needs and youth development. A small idea with a big heart — and a belief that communities thrive when they look after each other.</p>
         </div>
       </div>
 
       <div class="timeline-item">
-        <span class="timeline-year">2006</span>
+        <div class="timeline-year">2006</div>
         <div class="timeline-content">
-          <h3>New Community House Opens</h3>
-          <p>We opened our first permanent space — the Community House on Keady Way — providing meeting rooms and space for activities.</p>
+          <h3>Community House Opens</h3>
+          <p>We opened our first permanent space — the Community House on Keady Way — providing meeting rooms, activity space, and a home for growing programmes and local groups.</p>
         </div>
       </div>
 
       <div class="timeline-item">
-        <span class="timeline-year">2015</span>
+        <div class="timeline-year">2015</div>
         <div class="timeline-content">
           <h3>Community Hub Launched</h3>
-          <p>We expanded to Catherine Street, opening the Community Hub for wider programming and inclusive events.</p>
+          <p>We expanded to Catherine Street, opening the Community Hub for wider programming, inclusive events, and a new wave of community-led projects reaching more people than ever.</p>
         </div>
       </div>
 
       <div class="timeline-item">
-        <span class="timeline-year">2020</span>
+        <div class="timeline-year">2018</div>
         <div class="timeline-content">
-          <h3>Adapting During COVID</h3>
-          <p>We stayed connected through remote services, doorstep drop-ins, and virtual youth programming to support residents in isolation.</p>
+          <h3>DofE Operator Status</h3>
+          <p>RVRA became an approved Duke of Edinburgh operator, opening the award up to young people across Limavady and supporting dozens through Bronze, Silver, and Gold achievements.</p>
         </div>
       </div>
 
       <div class="timeline-item">
-        <span class="timeline-year">Today</span>
+        <div class="timeline-year">2020</div>
+        <div class="timeline-content">
+          <h3>Adapting During COVID-19</h3>
+          <p>We stayed connected through remote services, doorstep drop-ins, and virtual youth programming — ensuring no one in our community felt alone during the most challenging period in recent memory.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-year">2023</div>
+        <div class="timeline-content">
+          <h3>Marie's Beacon Fund Launched</h3>
+          <p>In loving memory of Marie McGuinness, RVRA and the McGuinness family launched the Beacon Fund — offering community grants to grassroots organisations making a difference in Limavady.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-year">Today</div>
         <div class="timeline-content">
           <h3>Still Growing, Still Listening</h3>
-          <p>Now a trusted centre in Limavady, we continue to deliver inclusive, creative, and responsive community support for all ages.</p>
+          <p>Now a trusted centre in Limavady, we continue to deliver inclusive, creative, and responsive community support for all ages. The work is never finished — and we wouldn't have it any other way.</p>
         </div>
       </div>
-    </section>
 
-    <section class="section story-cta">
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--light-blue);">
+  <div class="container" style="text-align:center; max-width:700px;">
+    <span class="section-label">The People Behind It All</span>
     <h2>It Wouldn't Have Been Possible Without Our Team</h2>
-    <p>Behind every programme, event, and act of support is a passionate, dedicated team of people who care deeply about this community.</p>
-    <a href="our-team.html" class="cta-button">Meet the Team</a>
-    </section>
+    <p style="color:var(--text-muted);">Behind every programme, event, and act of support is a passionate, dedicated team of people who care deeply about this community. They are the real story of RVRA.</p>
+    <div style="display:flex; justify-content:center; gap:1rem; flex-wrap:wrap; margin-top:1.5rem;">
+      <a href="our-team.html" class="btn btn-primary">Meet the Team</a>
+      <a href="about-us.html" class="btn btn-outline-blue">About RVRA</a>
+    </div>
+  </div>
+</section>
 
-  </main>
-
-  <div id="footer"></div>
-
-  <script src="scripts/includes.js"></script>
-  <script src="scripts/menu.js"></script>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><img src="images/rvra-logos/rvra-logo.png" alt="RVRA Logo" /><p>Empowering community in Limavady through inclusive support, creative programmes, and grassroots action.</p><div class="footer-socials"><a href="https://www.facebook.com/roevalley.residents/" target="_blank" rel="noopener">Facebook</a><a href="https://www.instagram.com/rvralimavady/" target="_blank" rel="noopener">Instagram</a><a href="https://x.com/rvra_limavady" target="_blank" rel="noopener">X / Twitter</a></div></div>
+      <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about-us.html">About Us</a></li><li><a href="our-story.html">Our Story</a></li><li><a href="our-team.html">Meet the Team</a></li></ul></div>
+      <div class="footer-col"><h4>Get Involved</h4><ul><li><a href="our-projects.html">Our Projects</a></li><li><a href="get-involved.html">Self-Refer</a></li><li><a href="get-involved.html">Volunteer</a></li><li><a href="maries-fund.html">Marie's Beacon Fund</a></li></ul></div>
+      <div class="footer-col"><h4>Contact Us</h4><ul><li><a href="facilities.html">Facilities &amp; Rooms</a></li><li><a href="news-and-events.html">News &amp; Events</a></li><li><a href="mailto:info@rvra.org.uk">info@rvra.org.uk</a></li><li><a href="tel:02877769996">028 7776 9996</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>&copy; 2025 Roe Valley Residents Association. Registered Charity.</span><span><a href="#">Privacy Policy</a> &nbsp;·&nbsp; <a href="#">Accessibility</a></span></div>
+  </div>
+</footer>
+<script>
+  function openMenu()  { document.getElementById('mobileMenu').classList.add('open'); }
+  function closeMenu() { document.getElementById('mobileMenu').classList.remove('open'); }
+</script>
 </body>
 </html>
