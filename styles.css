@@ -462,6 +462,7 @@ h3{font-size:1.2rem;}
 .social-row{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;margin-top:1rem;}
 .social-row a{color:var(--blue);font-weight:700;}
 @media(max-width:700px){.involve-grid{grid-template-columns:1fr;}.form-wrap{padding:2rem 1.5rem;}}
+@media(min-width:701px) and (max-width:900px){.involve-grid{grid-template-columns:1fr 1fr;}}
 
 /* ════════════════════════════════════════════════════
    NEWS PAGE
