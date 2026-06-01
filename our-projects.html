@@ -1,37 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Our Projects | RVRA</title>
-  <link rel="icon" href="images/rvra-logos/favicon-64x64.png" type="image/png" />
-  <link href="https://fonts.googleapis.com/css2?family=Atma:wght@400;500;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="images/rvra-logos/favicon-32x32.png" type="image/png"/>
+  <link href="https://fonts.googleapis.com/css2?family=Atma:wght@400;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-
 <header class="site-header">
   <div class="header-inner">
-    <a href="index.html" class="logo">
-      <img src="images/rvra-logos/rvra-logo.png" alt="RVRA Logo" />
-      <div class="logo-text"><strong>Roe Valley</strong><span>Residents Association</span></div>
-    </a>
-    <nav class="desktop-nav" aria-label="Main navigation">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about-us.html">About Us</a></li>
-        <li><a href="our-projects.html" class="active">Projects</a></li>
-        <li><a href="our-team.html">Our Team</a></li>
-        <li><a href="facilities.html">Facilities</a></li>
-        <li><a href="news-and-events.html">News &amp; Events</a></li>
-        <li><a href="get-involved.html" class="nav-cta">Get Involved</a></li>
-      </ul>
-    </nav>
+    <a href="index.html" class="logo"><img src="images/rvra-logos/rvra-logo.png" alt="Roe Valley Residents Association"/></a>
+    <nav class="desktop-nav"><ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about-us.html">About Us</a></li>
+      <li><a href="our-projects.html" class="active">Projects</a></li>
+      <li><a href="our-team.html">Our Team</a></li>
+      <li><a href="facilities.html">Facilities</a></li>
+      <li><a href="news-and-events.html">News &amp; Events</a></li>
+      <li><a href="get-involved.html" class="nav-cta-btn">Get Involved</a></li>
+    </ul></nav>
     <button class="mobile-menu-btn" aria-label="Open menu" onclick="openMenu()"><span></span><span></span><span></span></button>
   </div>
 </header>
-<nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
-  <button class="close-btn" aria-label="Close menu" onclick="closeMenu()">&times;</button>
+<nav class="mobile-menu" id="mobileMenu">
+  <button class="close-btn" onclick="closeMenu()">&times;</button>
   <ul>
     <li><a href="index.html" onclick="closeMenu()">Home</a></li>
     <li><a href="about-us.html" onclick="closeMenu()">About Us</a></li>
@@ -41,132 +35,76 @@
     <li><a href="news-and-events.html" onclick="closeMenu()">News &amp; Events</a></li>
     <li><a href="get-involved.html" onclick="closeMenu()">Get Involved</a></li>
   </ul>
+  <div class="mobile-socials">
+    <a href="https://www.facebook.com/roevalley.residents/" target="_blank" rel="noopener">Facebook</a>
+    <a href="https://www.instagram.com/rvralimavady/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://x.com/rvra_limavady" target="_blank" rel="noopener">Twitter</a>
+  </div>
 </nav>
 
-<nav class="breadcrumb"><a href="index.html">Home</a> <span>›</span> Our Projects</nav>
+<nav class="breadcrumb"><div class="container"><a href="index.html">Home</a> <span>›</span> Our Projects</div></nav>
 
-<section class="page-hero green">
-  <span class="section-label white">What We Do</span>
-  <h1>Our Projects &amp; Programmes</h1>
-  <p>Our programmes evolve from the needs of the people and communities with whom we work — rooted in listening, shaped by action.</p>
+<section class="page-hero green-hero">
+  <div class="container">
+    <span class="eyebrow green">What We Do</span>
+    <h1>Our Projects &amp; Programmes</h1>
+    <p>Our programmes evolve from the needs of the people and communities with whom we work — rooted in listening, shaped by action.</p>
+  </div>
 </section>
 
-<section class="section">
+<section class="section" style="background:var(--white);">
   <div class="container">
     <div class="projects-grid">
 
       <div class="project-card">
-        <div class="card-img">
-          <div class="img-placeholder medium" style="border-radius:0;" role="img" aria-label="Lotus Project photo">
-            <svg width="40" height="40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-            <span>the-lotus-project.jpg</span>
-          </div>
-        </div>
-        <div class="card-body">
-          <span class="tag tag-youth">Youth</span>
-          <h3>The Lotus Project</h3>
-          <p>Start the Adventure — offering opportunities for young people to connect, learn and grow together in a safe, welcoming, and fun environment. From group activities to one-to-one support, the Lotus Project is designed around what young people actually need.</p>
-          <a href="get-involved.html" class="btn btn-primary btn-sm">Get Involved</a>
-        </div>
+        <div class="card-img"><div class="img-ph h-sm no-r" role="img" aria-label="Lotus Project"><svg width="36" height="36" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg><span>the-lotus-project.jpg</span></div></div>
+        <div class="card-body"><span class="tag tag-youth">Youth</span><h3>The Lotus Project</h3><p>Start the Adventure — offering opportunities for young people to connect, learn and grow together in a safe, welcoming, and fun environment. Group activities to one-to-one support, designed around what young people actually need.</p><a href="get-involved.html" class="btn btn-green btn-sm">Get Involved</a></div>
       </div>
 
       <div class="project-card">
-        <div class="card-img">
-          <div class="img-placeholder medium" style="border-radius:0;" role="img" aria-label="HeadStart photo">
-            <svg width="40" height="40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-            <span>headstart.jpg</span>
-          </div>
-        </div>
-        <div class="card-body">
-          <span class="tag tag-employment">Employment</span>
-          <h3>HeadStart</h3>
-          <p>Learn, Earn, and have Fun — helping young people build real employability skills through hands-on experience, mentorship, and engaging workshops that make a lasting difference to their prospects.</p>
-          <a href="get-involved.html" class="btn btn-primary btn-sm">Get Involved</a>
-        </div>
+        <div class="card-img"><div class="img-ph h-sm no-r" role="img" aria-label="HeadStart"><svg width="36" height="36" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg><span>headstart.jpg</span></div></div>
+        <div class="card-body"><span class="tag tag-employment">Employment</span><h3>HeadStart</h3><p>Learn, Earn, and have Fun — helping young people build real employability skills through hands-on experience, mentorship, and engaging workshops that make a lasting difference to their prospects.</p><a href="get-involved.html" class="btn btn-green btn-sm">Get Involved</a></div>
       </div>
 
       <div class="project-card">
-        <div class="card-img">
-          <div class="img-placeholder medium" style="border-radius:0;" role="img" aria-label="YouthStart photo">
-            <svg width="40" height="40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-            <span>youthstart.jpg</span>
-          </div>
-        </div>
-        <div class="card-body">
-          <span class="tag tag-youth">Youth</span>
-          <h3>YouthStart</h3>
-          <p>Supporting transitions into education, training, or employment for those who need it most. YouthStart provides tailored guidance and a stepping stone for young people finding their path.</p>
-          <a href="get-involved.html" class="btn btn-primary btn-sm">Get Involved</a>
-        </div>
+        <div class="card-img"><div class="img-ph h-sm no-r" role="img" aria-label="YouthStart"><svg width="36" height="36" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg><span>youthstart.jpg</span></div></div>
+        <div class="card-body"><span class="tag tag-youth">Youth</span><h3>YouthStart</h3><p>Supporting transitions into education, training, or employment for those who need it most. YouthStart provides tailored guidance and a stepping stone for young people finding their path.</p><a href="get-involved.html" class="btn btn-green btn-sm">Get Involved</a></div>
       </div>
 
       <div class="project-card">
-        <div class="card-img">
-          <div class="img-placeholder medium" style="border-radius:0;" role="img" aria-label="Duke of Edinburgh photo">
-            <svg width="40" height="40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-            <span>dofe.jpg</span>
-          </div>
-        </div>
-        <div class="card-body">
-          <span class="tag tag-youth">Volunteering</span>
-          <h3>Duke of Edinburgh Award</h3>
-          <p>As an approved DofE operator, we support young people through Bronze, Silver, and Gold awards — combining volunteering, physical activity, and personal development challenges.</p>
-          <a href="get-involved.html" class="btn btn-primary btn-sm">Get Involved</a>
-        </div>
+        <div class="card-img"><div class="img-ph h-sm no-r" role="img" aria-label="Duke of Edinburgh"><svg width="36" height="36" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg><span>dofe.jpg</span></div></div>
+        <div class="card-body"><span class="tag tag-youth">Volunteering</span><h3>Duke of Edinburgh</h3><p>As an approved DofE operator, we support young people through Bronze, Silver, and Gold awards — combining volunteering, physical activity, and personal development challenges.</p><a href="get-involved.html" class="btn btn-green btn-sm">Get Involved</a></div>
       </div>
 
       <div class="project-card">
-        <div class="card-img">
-          <div class="img-placeholder medium" style="border-radius:0;" role="img" aria-label="Community support photo">
-            <svg width="40" height="40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-            <span>community-support.jpg</span>
-          </div>
-        </div>
-        <div class="card-body">
-          <span class="tag tag-wellbeing">Wellbeing</span>
-          <h3>Community Support</h3>
-          <p>From crisis referrals and food assistance to mental health check-ins and befriending, our community support work reaches people at their most vulnerable and helps them find a way forward.</p>
-          <a href="get-involved.html" class="btn btn-primary btn-sm">Find Support</a>
-        </div>
+        <div class="card-img"><div class="img-ph h-sm no-r" role="img" aria-label="Community Support"><svg width="36" height="36" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg><span>community-support.jpg</span></div></div>
+        <div class="card-body"><span class="tag tag-wellbeing">Wellbeing</span><h3>Community Support</h3><p>From crisis referrals and food assistance to mental health check-ins and befriending — practical help for people at their most vulnerable, helping them find a way forward.</p><a href="get-involved.html" class="btn btn-blue btn-sm">Find Support</a></div>
       </div>
 
       <div class="project-card">
-        <div class="card-img">
-          <div class="img-placeholder medium" style="border-radius:0;" role="img" aria-label="Marie's Beacon Fund photo">
-            <svg width="40" height="40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-            <span>maries-beacon-fund.jpg</span>
-          </div>
-        </div>
-        <div class="card-body">
-          <span class="tag tag-community">Community Grants</span>
-          <h3>Marie's Beacon Fund</h3>
-          <p>In loving memory of Marie McGuinness. Grants of up to £500 for grassroots groups making a real difference in the Limavady area — addressing isolation, poverty, mental health, and local development.</p>
-          <a href="maries-fund.html" class="btn btn-primary btn-sm">Learn More</a>
-        </div>
+        <div class="card-img"><div class="img-ph h-sm no-r" role="img" aria-label="Marie's Beacon Fund"><svg width="36" height="36" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg><span>maries-beacon-fund.jpg</span></div></div>
+        <div class="card-body"><span class="tag tag-community">Grants</span><h3>Marie's Beacon Fund</h3><p>Grants of up to £500 for grassroots groups making a real difference in Limavady — in loving memory of Marie McGuinness, whose light continues through every grant awarded.</p><a href="maries-fund.html" class="btn btn-outline-orange btn-sm">Learn More</a></div>
       </div>
 
     </div>
   </div>
 </section>
 
-<section class="cta-band">
-  <h2>Want to Join a Programme?</h2>
-  <p>Use our self-referral form to get connected with the right project for you — or just get in touch and we'll help.</p>
-  <a href="get-involved.html" class="btn btn-white">Get Started</a>
-</section>
-
-<footer class="site-footer">
+<section class="cta-band green-band">
   <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand"><img src="images/rvra-logos/rvra-logo.png" alt="RVRA Logo" /><p>Empowering community in Limavady through inclusive support, creative programmes, and grassroots action.</p><div class="footer-socials"><a href="https://www.facebook.com/roevalley.residents/" target="_blank" rel="noopener">Facebook</a><a href="https://www.instagram.com/rvralimavady/" target="_blank" rel="noopener">Instagram</a><a href="https://x.com/rvra_limavady" target="_blank" rel="noopener">X / Twitter</a></div></div>
-      <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about-us.html">About Us</a></li><li><a href="our-story.html">Our Story</a></li><li><a href="our-team.html">Meet the Team</a></li></ul></div>
-      <div class="footer-col"><h4>Get Involved</h4><ul><li><a href="our-projects.html">Our Projects</a></li><li><a href="get-involved.html">Self-Refer</a></li><li><a href="get-involved.html">Volunteer</a></li><li><a href="maries-fund.html">Marie's Beacon Fund</a></li></ul></div>
-      <div class="footer-col"><h4>Contact Us</h4><ul><li><a href="facilities.html">Facilities &amp; Rooms</a></li><li><a href="news-and-events.html">News &amp; Events</a></li><li><a href="mailto:info@rvra.org.uk">info@rvra.org.uk</a></li><li><a href="tel:02877769996">028 7776 9996</a></li></ul></div>
-    </div>
-    <div class="footer-bottom"><span>&copy; 2025 Roe Valley Residents Association. Registered Charity.</span><span><a href="#">Privacy Policy</a> &nbsp;·&nbsp; <a href="#">Accessibility</a></span></div>
+    <h2>Want to Join a Programme?</h2>
+    <p>Use our self-referral form to get connected with the right project for you — or just get in touch and we'll help.</p>
+    <a href="get-involved.html" class="btn btn-white btn-lg">Get Started</a>
   </div>
-</footer>
+</section>
 
+<div class="footer-top-bar"><div class="container"><span>📞 028 7776 9996 &nbsp;|&nbsp; ✉️ info@rvra.org.uk</span><a href="get-involved.html">Get Involved Today →</a></div></div>
+<footer class="site-footer"><div class="container"><div class="footer-grid">
+  <div class="footer-brand"><img src="images/rvra-logos/rvra-logo.png" alt="RVRA"/><p>Empowering community in Limavady through inclusive support, creative programmes, and grassroots action since 1998.</p><div class="footer-socials"><a href="https://www.facebook.com/roevalley.residents/" target="_blank" rel="noopener">Facebook</a><a href="https://www.instagram.com/rvralimavady/" target="_blank" rel="noopener">Instagram</a><a href="https://x.com/rvra_limavady" target="_blank" rel="noopener">Twitter</a></div></div>
+  <div class="footer-col"><h4>Organisation</h4><ul><li><a href="index.html">Home</a></li><li><a href="about-us.html">About Us</a></li><li><a href="our-story.html">Our Story</a></li><li><a href="our-team.html">Meet the Team</a></li></ul></div>
+  <div class="footer-col"><h4>Get Involved</h4><ul><li><a href="our-projects.html">Our Projects</a></li><li><a href="get-involved.html">Self-Refer</a></li><li><a href="get-involved.html">Volunteer</a></li><li><a href="maries-fund.html">Marie's Beacon Fund</a></li></ul></div>
+  <div class="footer-col"><h4>Contact</h4><ul><li><a href="facilities.html">Facilities &amp; Booking</a></li><li><a href="news-and-events.html">News &amp; Events</a></li><li><a href="mailto:info@rvra.org.uk">info@rvra.org.uk</a></li><li><a href="tel:02877769996">028 7776 9996</a></li></ul></div>
+</div><div class="footer-bottom"><span>&copy; 2025 Roe Valley Residents Association. Registered Charity.</span><span><a href="#">Privacy Policy</a> &nbsp;·&nbsp; <a href="#">Accessibility</a></span></div></div></footer>
 <script>
   function openMenu()  { document.getElementById('mobileMenu').classList.add('open'); }
   function closeMenu() { document.getElementById('mobileMenu').classList.remove('open'); }
