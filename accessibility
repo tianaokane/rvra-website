@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Accessibility | Roe Valley Residents Association</title>
+  <meta name="description" content="Accessibility statement for the Roe Valley Residents Association website, including our commitment to accessible content and how to report accessibility issues."/>
+  <link rel="icon" href="images/rvra-logos/favicon-32x32.png" type="image/png"/>
+  <link href="https://fonts.googleapis.com/css2?family=Atma:wght@400;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+  <style>
+    .accessibility-wrap{
+      max-width:900px;
+      margin:0 auto;
+    }
+
+    .accessibility-card{
+      background:var(--white);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow-sm);
+      padding:2rem;
+      margin-bottom:1.25rem;
+    }
+
+    .accessibility-card h2{
+      font-size:1.45rem;
+      margin-bottom:.85rem;
+      letter-spacing:-.01em;
+    }
+
+    .accessibility-card h3{
+      font-size:1.05rem;
+      margin:1.4rem 0 .5rem;
+      color:var(--text);
+    }
+
+    .accessibility-card p,
+    .accessibility-card li{
+      color:var(--text-mid);
+      line-height:1.8;
+    }
+
+    .accessibility-card ul{
+      list-style:disc;
+      padding-left:1.4rem;
+      margin:.75rem 0 0;
+    }
+
+    .accessibility-card li{
+      margin-bottom:.45rem;
+    }
+
+    .accessibility-meta{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:.7rem;
+      flex-wrap:wrap;
+      margin-top:1.5rem;
+      color:var(--text-mid);
+      font-weight:600;
+      font-size:.95rem;
+    }
+
+    .accessibility-pill{
+      display:inline-flex;
+      align-items:center;
+      gap:.4rem;
+      background:var(--white);
+      border:1px solid var(--border);
+      border-radius:100px;
+      padding:.45rem .9rem;
+      box-shadow:var(--shadow-sm);
+    }
+
+    .accessibility-highlight{
+      background:linear-gradient(135deg,var(--green-pale),var(--blue-pale));
+      border:1px solid var(--blue-mid);
+      border-radius:var(--radius-lg);
+      padding:2rem;
+      margin-bottom:1.5rem;
+      text-align:center;
+    }
+
+    .accessibility-highlight p{
+      color:var(--text-mid);
+      max-width:700px;
+      margin:0 auto;
+    }
+
+    .accessibility-contact-grid{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:1rem;
+      margin-top:1rem;
+    }
+
+    .accessibility-contact-item{
+      background:var(--off-white);
+      border:1px solid var(--border);
+      border-radius:var(--radius-sm);
+      padding:1rem;
+    }
+
+    .accessibility-contact-item strong{
+      display:block;
+      color:var(--text);
+      margin-bottom:.2rem;
+    }
+
+    .accessibility-card a{
+      color:var(--blue-dark);
+      font-weight:700;
+      text-decoration:underline;
+      text-underline-offset:3px;
+    }
+
+    .accessibility-card a:hover{
+      color:var(--orange-dark);
+    }
+
+    .accessibility-check-grid{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:1rem;
+      margin-top:1rem;
+    }
+
+    .accessibility-check{
+      background:var(--off-white);
+      border:1px solid var(--border);
+      border-radius:var(--radius-sm);
+      padding:1rem;
+    }
+
+    .accessibility-check strong{
+      display:block;
+      color:var(--text);
+      margin-bottom:.25rem;
+    }
+
+    .accessibility-check p{
+      font-size:.95rem;
+      margin:0;
+    }
+
+    @media(max-width:640px){
+      .accessibility-card{padding:1.4rem;}
+      .accessibility-contact-grid,
+      .accessibility-check-grid{grid-template-columns:1fr;}
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo" aria-label="RVRA Home">
+      <img src="images/rvra-logos/rvra-logo.png" alt="Roe Valley Residents Association"/>
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="our-projects.html">Projects</a></li>
+        <li><a href="our-team.html">Our Team</a></li>
+        <li><a href="facilities.html">Facilities</a></li>
+        <li><a href="news-and-events.html">News &amp; Events</a></li>
+        <li><a href="get-involved.html" class="nav-cta-btn">Get Involved</a></li>
+      </ul>
+    </nav>
+    <button class="mobile-menu-btn" aria-label="Open menu" onclick="openMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+  <button class="close-btn" aria-label="Close menu" onclick="closeMenu()">&times;</button>
+  <ul>
+    <li><a href="index.html" onclick="closeMenu()">Home</a></li>
+    <li><a href="about-us.html" onclick="closeMenu()">About Us</a></li>
+    <li><a href="our-projects.html" onclick="closeMenu()">Projects</a></li>
+    <li><a href="our-team.html" onclick="closeMenu()">Our Team</a></li>
+    <li><a href="facilities.html" onclick="closeMenu()">Facilities</a></li>
+    <li><a href="news-and-events.html" onclick="closeMenu()">News &amp; Events</a></li>
+    <li><a href="get-involved.html" onclick="closeMenu()">Get Involved</a></li>
+  </ul>
+  <div class="mobile-socials">
+    <a href="https://www.facebook.com/roevalley.residents/" target="_blank" rel="noopener">Facebook</a>
+    <a href="https://www.instagram.com/rvralimavady/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://x.com/rvra_limavady" target="_blank" rel="noopener">Twitter</a>
+  </div>
+</nav>
+
+<nav class="breadcrumb">
+  <div class="container">
+    <a href="index.html">Home</a> <span>›</span> Accessibility
+  </div>
+</nav>
+
+<section class="page-hero green-hero">
+  <div class="container">
+    <span class="eyebrow green">Accessibility</span>
+    <h1>Accessibility Statement</h1>
+    <p>How Roe Valley Residents Association is working to make this website usable, readable, and welcoming for as many people as possible.</p>
+    <div class="accessibility-meta">
+      <span class="accessibility-pill">Last updated: 1 June 2026</span>
+      <span class="accessibility-pill">Website hosted on GitHub Pages</span>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--off-white);">
+  <div class="container">
+    <div class="accessibility-wrap">
+
+      <div class="accessibility-highlight">
+        <span class="eyebrow blue">Simple Summary</span>
+        <h2>We want everyone to be able to use this website</h2>
+        <p>RVRA is a community organisation, and our website should reflect that. We aim to make our content clear, easy to navigate, and accessible across different devices, browsers, and assistive technologies.</p>
+      </div>
+
+      <div class="accessibility-card">
+        <h2>1. Our commitment</h2>
+        <p>Roe Valley Residents Association wants its website to be accessible to as many people as possible. This means you should be able to:</p>
+        <ul>
+          <li>zoom in without the text becoming unreadable;</li>
+          <li>navigate the website using a keyboard;</li>
+          <li>use the website with screen readers and assistive technologies;</li>
+          <li>read content that uses clear headings, meaningful links, and simple language;</li>
+          <li>access the website on mobile, tablet, laptop, and desktop devices.</li>
+        </ul>
+      </div>
+
+      <div class="accessibility-card">
+        <h2>2. Accessibility standard we aim for</h2>
+        <p>Where reasonably possible, we aim to follow the Web Content Accessibility Guidelines, known as WCAG. These guidelines are internationally recognised recommendations for making web content more accessible.</p>
+        <p>Our aim is to work towards WCAG 2.2 Level AA, while continuing to improve the website over time.</p>
+      </div>
+
+      <div class="accessibility-card">
+        <h2>3. What we have done to support accessibility</h2>
+        <div class="accessibility-check-grid">
+          <div class="accessibility-check">
+            <strong>Clear structure</strong>
+            <p>Pages use headings, sections, and navigation links to make content easier to scan.</p>
+          </div>
+          <div class="accessibility-check">
+            <strong>Readable design</strong>
+            <p>The site uses large text, generous spacing, and strong colour contrast across most page sections.</p>
+          </div>
+          <div class="accessibility-check">
+            <strong>Keyboard access</strong>
+            <p>Links, buttons, menus, and form fields are designed to be reachable without a mouse.</p>
+          </div>
+          <div class="accessibility-check">
+            <strong>Helpful image text</strong>
+            <p>Images and placeholders include alternative text where they communicate useful information.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accessibility-card">
+        <h2>4. Known limitations</h2>
+        <p>This website is still being developed and improved. We have not yet completed a formal external accessibility audit.</p>
+        <p>Known or possible limitations include:</p>
+        <ul>
+          <li>some older pages may not yet fully match the newest site structure;</li>
+          <li>some images may still need more descriptive alternative text once final photos are added;</li>
+          <li>embedded third-party content, social media links, or external websites may not be fully controlled by RVRA;</li>
+          <li>some downloadable documents, if added in future, may need separate accessibility checks.</li>
+        </ul>
+        <p>We will continue reviewing and improving the website as content is updated.</p>
+      </div>
+
+      <div class="accessibility-card">
+        <h2>5. Forms and online enquiries</h2>
+        <p>Some pages may include enquiry or self-referral forms. We aim to make these forms clear, labelled, and easy to use.</p>
+        <p>If a form does not work for you, or if you would prefer to contact us another way, please phone or email us using the details below.</p>
+      </div>
+
+      <div class="accessibility-card">
+        <h2>6. Alternative formats</h2>
+        <p>If you need information from this website in a different format, please contact us. For example, you can ask for information to be explained over the phone, sent by email, or provided in a simpler format where possible.</p>
+        <div class="accessibility-contact-grid">
+          <div class="accessibility-contact-item">
+            <strong>Email</strong>
+            <a href="mailto:info@rvra.org.uk">info@rvra.org.uk</a>
+          </div>
+          <div class="accessibility-contact-item">
+            <strong>Phone</strong>
+            <a href="tel:02877769996">028 7776 9996</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="accessibility-card">
+        <h2>7. Reporting an accessibility problem</h2>
+        <p>If you find an accessibility problem on this website, please let us know so we can look into it.</p>
+        <p>When contacting us, it helps if you can tell us:</p>
+        <ul>
+          <li>which page you were using;</li>
+          <li>what went wrong;</li>
+          <li>what device, browser, or assistive technology you were using, if relevant;</li>
+          <li>what you were trying to do.</li>
+        </ul>
+        <p>We will do our best to respond and fix issues where reasonably possible.</p>
+      </div>
+
+      <div class="accessibility-card">
+        <h2>8. Legal context</h2>
+        <p>All UK service providers have duties to make reasonable adjustments for disabled people. In Northern Ireland, disability discrimination law also applies to service providers.</p>
+        <p>RVRA is not presenting this page as a formal public sector accessibility statement, but we are using accessibility guidance as a practical standard for improving the website.</p>
+      </div>
+
+      <div class="accessibility-card">
+        <h2>9. Ongoing improvements</h2>
+        <p>Accessibility is not a one-time task. As the website grows, we will keep checking:</p>
+        <ul>
+          <li>colour contrast;</li>
+          <li>keyboard navigation;</li>
+          <li>mobile layout;</li>
+          <li>image alt text;</li>
+          <li>form labels and error messages;</li>
+          <li>page headings and link text.</li>
+        </ul>
+        <p>This statement will be updated when major changes are made to the website.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="cta-band blue-band">
+  <div class="container">
+    <h2>Need help using the website?</h2>
+    <p>Contact the RVRA team and we’ll help you access the information you need.</p>
+    <a href="mailto:info@rvra.org.uk" class="btn btn-white btn-lg">Email Us</a>
+  </div>
+</section>
+
+<div class="footer-top-bar">
+  <div class="container">
+    <span>📞 028 7776 9996 &nbsp;|&nbsp; ✉️ info@rvra.org.uk</span>
+    <a href="get-involved.html">Get Involved Today →</a>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="images/rvra-logos/rvra-logo.png" alt="RVRA"/>
+        <p>Empowering community in Limavady through inclusive support, creative programmes, and grassroots action since 1998.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/roevalley.residents/" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://www.instagram.com/rvralimavady/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://x.com/rvra_limavady" target="_blank" rel="noopener">Twitter</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Organisation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="our-story.html">Our Story</a></li>
+          <li><a href="our-team.html">Meet the Team</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Get Involved</h4>
+        <ul>
+          <li><a href="our-projects.html">Our Projects</a></li>
+          <li><a href="get-involved.html">Self-Refer</a></li>
+          <li><a href="get-involved.html">Volunteer</a></li>
+          <li><a href="maries-fund.html">Marie's Beacon Fund</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="facilities.html">Facilities &amp; Booking</a></li>
+          <li><a href="news-and-events.html">News &amp; Events</a></li>
+          <li><a href="mailto:info@rvra.org.uk">info@rvra.org.uk</a></li>
+          <li><a href="tel:02877769996">028 7776 9996</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Roe Valley Residents Association. Registered Charity.</span>
+      <span><a href="privacy-policy.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="accessibility.html">Accessibility</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function openMenu()  { document.getElementById('mobileMenu').classList.add('open'); }
+  function closeMenu() { document.getElementById('mobileMenu').classList.remove('open'); }
+</script>
+</body>
+</html>
