@@ -230,6 +230,8 @@ h3{font-size:1.2rem;}
   .hero-logo-card img{width:160px;}
   .hero-stats{flex-wrap:wrap;}
   .hero-stat{min-width:50%;}
+  .hero-stat:nth-child(2){border-right:none;}
+  .hero-stat:nth-child(3){border-top:1px solid var(--border);}
   .ftag{display:none;}
 }
 
@@ -255,7 +257,14 @@ h3{font-size:1.2rem;}
   transition:transform .25s var(--ease),box-shadow .25s;
 }
 .project-card:hover{transform:translateY(-5px);box-shadow:var(--shadow);}
+.project-card .card-img{overflow:hidden;display:block;}
 .project-card .card-img .img-ph{border-radius:0;}
+.facility-card .card-img{overflow:hidden;display:block;}
+.facility-card .card-img .img-ph{border-radius:0;}
+.news-card .card-img{overflow:hidden;display:block;}
+.news-card .card-img .img-ph{border-radius:0;}
+.event-card .card-img{overflow:hidden;display:block;}
+.event-card .card-img .img-ph{border-radius:0;}
 .project-card .card-body{padding:1.4rem;flex:1;display:flex;flex-direction:column;}
 .project-card h3{color:var(--text);font-size:1rem;margin-bottom:.35rem;}
 .project-card p{color:var(--text-muted);font-size:.87rem;flex:1;margin-bottom:1rem;line-height:1.65;}
@@ -507,9 +516,11 @@ h3{font-size:1.2rem;}
    CAROUSEL
 ════════════════════════════════════════════════════ */
 .carousel{position:relative;overflow:hidden;border-radius:var(--radius);box-shadow:var(--shadow-lg);}
-.carousel-slides{display:flex;transition:transform .5s var(--ease);}
-.carousel-slide{min-width:100%;}
+.carousel-slides{display:flex;transition:transform .5s var(--ease);width:300%;}
+.carousel-slide{min-width:0;flex:0 0 33.333%;}
 .carousel-slide .img-ph{border-radius:0;}
+.full-facility-card .card-img{overflow:hidden;display:block;}
+.full-facility-card .card-img .img-ph{border-radius:0;}
 .carousel-btn{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.85);border:none;color:var(--text);font-size:1.4rem;padding:.6rem 1rem;cursor:pointer;transition:background .2s;z-index:10;backdrop-filter:blur(4px);border-radius:var(--radius-sm);}
 .carousel-btn:hover{background:var(--white);}
 .carousel-btn.prev{left:.75rem;}
