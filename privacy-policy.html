@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy | Roe Valley Residents Association</title>
+  <meta name="description" content="Privacy Policy for the Roe Valley Residents Association website, explaining how we handle personal information and how the website is hosted."/>
+  <link rel="icon" href="images/rvra-logos/favicon-32x32.png" type="image/png"/>
+  <link href="https://fonts.googleapis.com/css2?family=Atma:wght@400;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+  <style>
+    .policy-wrap{
+      max-width:900px;
+      margin:0 auto;
+    }
+
+    .policy-card{
+      background:var(--white);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow-sm);
+      padding:2rem;
+      margin-bottom:1.25rem;
+    }
+
+    .policy-card h2{
+      font-size:1.45rem;
+      margin-bottom:.85rem;
+      letter-spacing:-.01em;
+    }
+
+    .policy-card h3{
+      font-size:1.05rem;
+      margin:1.4rem 0 .5rem;
+      color:var(--text);
+    }
+
+    .policy-card p,
+    .policy-card li{
+      color:var(--text-mid);
+      line-height:1.8;
+    }
+
+    .policy-card ul{
+      list-style:disc;
+      padding-left:1.4rem;
+      margin:.75rem 0 0;
+    }
+
+    .policy-card li{
+      margin-bottom:.45rem;
+    }
+
+    .policy-meta{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:.7rem;
+      flex-wrap:wrap;
+      margin-top:1.5rem;
+      color:var(--text-mid);
+      font-weight:600;
+      font-size:.95rem;
+    }
+
+    .policy-pill{
+      display:inline-flex;
+      align-items:center;
+      gap:.4rem;
+      background:var(--white);
+      border:1px solid var(--border);
+      border-radius:100px;
+      padding:.45rem .9rem;
+      box-shadow:var(--shadow-sm);
+    }
+
+    .policy-highlight{
+      background:linear-gradient(135deg,var(--blue-pale),var(--green-pale));
+      border:1px solid var(--blue-mid);
+      border-radius:var(--radius-lg);
+      padding:2rem;
+      margin-bottom:1.5rem;
+      text-align:center;
+    }
+
+    .policy-highlight p{
+      color:var(--text-mid);
+      max-width:680px;
+      margin:0 auto;
+    }
+
+    .policy-contact-grid{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:1rem;
+      margin-top:1rem;
+    }
+
+    .policy-contact-item{
+      background:var(--off-white);
+      border:1px solid var(--border);
+      border-radius:var(--radius-sm);
+      padding:1rem;
+    }
+
+    .policy-contact-item strong{
+      display:block;
+      color:var(--text);
+      margin-bottom:.2rem;
+    }
+
+    .policy-card a{
+      color:var(--blue-dark);
+      font-weight:700;
+      text-decoration:underline;
+      text-underline-offset:3px;
+    }
+
+    .policy-card a:hover{
+      color:var(--orange-dark);
+    }
+
+    @media(max-width:640px){
+      .policy-card{padding:1.4rem;}
+      .policy-contact-grid{grid-template-columns:1fr;}
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo" aria-label="RVRA Home">
+      <img src="images/rvra-logos/rvra-logo.png" alt="Roe Valley Residents Association"/>
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="our-projects.html">Projects</a></li>
+        <li><a href="our-team.html">Our Team</a></li>
+        <li><a href="facilities.html">Facilities</a></li>
+        <li><a href="news-and-events.html">News &amp; Events</a></li>
+        <li><a href="get-involved.html" class="nav-cta-btn">Get Involved</a></li>
+      </ul>
+    </nav>
+    <button class="mobile-menu-btn" aria-label="Open menu" onclick="openMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+  <button class="close-btn" aria-label="Close menu" onclick="closeMenu()">&times;</button>
+  <ul>
+    <li><a href="index.html" onclick="closeMenu()">Home</a></li>
+    <li><a href="about-us.html" onclick="closeMenu()">About Us</a></li>
+    <li><a href="our-projects.html" onclick="closeMenu()">Projects</a></li>
+    <li><a href="our-team.html" onclick="closeMenu()">Our Team</a></li>
+    <li><a href="facilities.html" onclick="closeMenu()">Facilities</a></li>
+    <li><a href="news-and-events.html" onclick="closeMenu()">News &amp; Events</a></li>
+    <li><a href="get-involved.html" onclick="closeMenu()">Get Involved</a></li>
+  </ul>
+  <div class="mobile-socials">
+    <a href="https://www.facebook.com/roevalley.residents/" target="_blank" rel="noopener">Facebook</a>
+    <a href="https://www.instagram.com/rvralimavady/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://x.com/rvra_limavady" target="_blank" rel="noopener">Twitter</a>
+  </div>
+</nav>
+
+<nav class="breadcrumb">
+  <div class="container">
+    <a href="index.html">Home</a> <span>›</span> Privacy Policy
+  </div>
+</nav>
+
+<section class="page-hero blue-hero">
+  <div class="container">
+    <span class="eyebrow blue">Your Privacy</span>
+    <h1>Privacy Policy</h1>
+    <p>How Roe Valley Residents Association handles personal information when you use this website or contact us.</p>
+    <div class="policy-meta">
+      <span class="policy-pill">Last updated: 1 June 2026</span>
+      <span class="policy-pill">Website hosted on GitHub Pages</span>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--off-white);">
+  <div class="container">
+    <div class="policy-wrap">
+
+      <div class="policy-highlight">
+        <span class="eyebrow green">Simple Summary</span>
+        <h2>We only ask for information when we need it</h2>
+        <p>This website is mainly here to share information about RVRA, our projects, facilities, events, and ways to get involved. We do not use this website for advertising tracking, and we do not sell personal information.</p>
+      </div>
+
+      <div class="policy-card">
+        <h2>1. Who we are</h2>
+        <p>This website is operated by Roe Valley Residents Association, a community organisation based in Limavady, Northern Ireland.</p>
+        <div class="policy-contact-grid">
+          <div class="policy-contact-item">
+            <strong>Email</strong>
+            <a href="mailto:info@rvra.org.uk">info@rvra.org.uk</a>
+          </div>
+          <div class="policy-contact-item">
+            <strong>Phone</strong>
+            <a href="tel:02877769996">028 7776 9996</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="policy-card">
+        <h2>2. Information we may collect</h2>
+        <p>We may collect personal information when you choose to contact us, ask for support, enquire about volunteering, request room booking information, apply for a programme, or contact us about one of our projects.</p>
+        <p>This may include:</p>
+        <ul>
+          <li>your name;</li>
+          <li>your email address or phone number;</li>
+          <li>the organisation or group you represent, if relevant;</li>
+          <li>details you include in your message or enquiry;</li>
+          <li>information needed to respond to your request or provide support.</li>
+        </ul>
+        <p>Please only send information that is necessary for your enquiry.</p>
+      </div>
+
+      <div class="policy-card">
+        <h2>3. How we use your information</h2>
+        <p>We use personal information to:</p>
+        <ul>
+          <li>respond to enquiries;</li>
+          <li>provide information about RVRA services, projects, facilities, volunteering, or events;</li>
+          <li>process requests, referrals, expressions of interest, or applications;</li>
+          <li>keep appropriate records of our work;</li>
+          <li>protect the security and proper running of the website;</li>
+          <li>meet legal, safeguarding, funding, or reporting requirements where they apply.</li>
+        </ul>
+      </div>
+
+      <div class="policy-card">
+        <h2>4. Our lawful reasons for using information</h2>
+        <p>Depending on the situation, we may use personal information because:</p>
+        <ul>
+          <li>you have given consent;</li>
+          <li>we need to respond to your enquiry or take steps you have asked us to take;</li>
+          <li>it is in our legitimate interests as a community organisation to communicate with people and manage our services;</li>
+          <li>we need to meet a legal obligation;</li>
+          <li>we need to protect someone’s vital interests, for example in an urgent safeguarding or welfare situation.</li>
+        </ul>
+      </div>
+
+      <div class="policy-card">
+        <h2>5. Website hosting and technical information</h2>
+        <p>This website is hosted using GitHub Pages. When someone visits a GitHub Pages website, GitHub may log the visitor’s IP address and related technical information for security, integrity, and legal purposes.</p>
+        <p>You can read more in GitHub’s privacy information:</p>
+        <p><a href="https://docs.github.com/site-policy/privacy-policies/github-privacy-statement" target="_blank" rel="noopener">GitHub Privacy Statement</a></p>
+      </div>
+
+      <div class="policy-card">
+        <h2>6. Fonts and third-party services</h2>
+        <p>This website currently loads fonts from Google Fonts. When your browser requests these fonts, technical information may be processed by Google in order to provide the font files.</p>
+        <p>You can read more here:</p>
+        <p><a href="https://developers.google.com/fonts/faq/privacy" target="_blank" rel="noopener">Google Fonts Privacy FAQ</a></p>
+        <p>Our website may also link to external websites or social media pages, such as Facebook, Instagram, or X/Twitter. Once you leave our website, those services are responsible for how they handle your information.</p>
+      </div>
+
+      <div class="policy-card">
+        <h2>7. Cookies and analytics</h2>
+        <p>We do not currently use advertising cookies, tracking cookies, or analytics tools on this website.</p>
+        <p>If we add analytics, embedded content, forms, or other tools in the future, we will update this policy and provide any cookie information that is required.</p>
+      </div>
+
+      <div class="policy-card">
+        <h2>8. Who we share information with</h2>
+        <p>We do not sell personal information. We may share information only where it is necessary, appropriate, and lawful, such as with:</p>
+        <ul>
+          <li>staff, volunteers, or trustees who need it to respond to your enquiry or provide support;</li>
+          <li>email, website, IT, or administration providers who help us run our services;</li>
+          <li>funders or partner organisations where this is necessary for a specific programme and appropriate safeguards are in place;</li>
+          <li>statutory, legal, safeguarding, or emergency services where required or where someone may be at risk.</li>
+        </ul>
+      </div>
+
+      <div class="policy-card">
+        <h2>9. How long we keep information</h2>
+        <p>We keep personal information only for as long as needed for the purpose it was collected, including any legal, safeguarding, funding, accounting, or reporting requirements that apply.</p>
+        <p>If you contact us with a general enquiry, we will usually keep your message only as long as needed to deal with it and maintain appropriate records.</p>
+      </div>
+
+      <div class="policy-card">
+        <h2>10. Your rights</h2>
+        <p>Depending on the situation, you may have rights to:</p>
+        <ul>
+          <li>ask for a copy of the personal information we hold about you;</li>
+          <li>ask us to correct information that is wrong or incomplete;</li>
+          <li>ask us to delete information in certain circumstances;</li>
+          <li>ask us to restrict or object to certain uses of your information;</li>
+          <li>withdraw consent where we rely on consent.</li>
+        </ul>
+        <p>To ask about your information, contact us using the details on this page.</p>
+      </div>
+
+      <div class="policy-card">
+        <h2>11. Complaints</h2>
+        <p>If you are unhappy with how we handle your personal information, please contact us first so we can try to put things right.</p>
+        <p>You also have the right to complain to the Information Commissioner’s Office, the UK regulator for data protection.</p>
+        <p><a href="https://ico.org.uk/make-a-complaint/" target="_blank" rel="noopener">Make a complaint to the ICO</a></p>
+      </div>
+
+      <div class="policy-card">
+        <h2>12. Updates to this policy</h2>
+        <p>We may update this Privacy Policy from time to time, especially if we add website forms, analytics, embedded content, online booking tools, or new services. The latest version will always be published on this page.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="cta-band orange-band">
+  <div class="container">
+    <h2>Have a privacy question?</h2>
+    <p>Contact the RVRA team and we’ll do our best to help.</p>
+    <a href="mailto:info@rvra.org.uk" class="btn btn-white btn-lg">Email Us</a>
+  </div>
+</section>
+
+<div class="footer-top-bar">
+  <div class="container">
+    <span>📞 028 7776 9996 &nbsp;|&nbsp; ✉️ info@rvra.org.uk</span>
+    <a href="get-involved.html">Get Involved Today →</a>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="images/rvra-logos/rvra-logo.png" alt="RVRA"/>
+        <p>Empowering community in Limavady through inclusive support, creative programmes, and grassroots action since 1998.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/roevalley.residents/" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://www.instagram.com/rvralimavady/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://x.com/rvra_limavady" target="_blank" rel="noopener">Twitter</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Organisation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="our-story.html">Our Story</a></li>
+          <li><a href="our-team.html">Meet the Team</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Get Involved</h4>
+        <ul>
+          <li><a href="our-projects.html">Our Projects</a></li>
+          <li><a href="get-involved.html">Self-Refer</a></li>
+          <li><a href="get-involved.html">Volunteer</a></li>
+          <li><a href="maries-fund.html">Marie's Beacon Fund</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="facilities.html">Facilities &amp; Booking</a></li>
+          <li><a href="news-and-events.html">News &amp; Events</a></li>
+          <li><a href="mailto:info@rvra.org.uk">info@rvra.org.uk</a></li>
+          <li><a href="tel:02877769996">028 7776 9996</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Roe Valley Residents Association. Registered Charity.</span>
+      <span><a href="privacy-policy.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="accessibility.html">Accessibility</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function openMenu()  { document.getElementById('mobileMenu').classList.add('open'); }
+  function closeMenu() { document.getElementById('mobileMenu').classList.remove('open'); }
+</script>
+</body>
+</html>
