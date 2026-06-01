@@ -1,87 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" href="images/rvra-logos/favicon-64x64.png" type="image/png">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Get Involved | RVRA</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Atma:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/rvra-logos/favicon-64x64.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Atma:wght@400;500;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header id="header-placeholder"></header>
 
-  <main class="section">
-    <h1>Get Involved</h1>
-    <p>Learn how to volunteer, join a project, or refer yourself using our short quiz or form.</p>
-
-    <div class="form-wrapper">
-      <h2>Self-Referral Form</h2>
-      <p>Fill out this quick form to get connected with one of our projects or find support that suits you.</p>
-
-      <form class="referral-form" id="referralForm">
-
-        <label for="name">Name*</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="age">Age*</label>
-        <input type="number" id="age" name="age" required>
-
-        <label for="contact">Email or Phone*</label>
-        <input type="text" id="contact" name="contact" required>
-
-        <label for="interest">What are you interested in?</label>
-        <select id="interest" name="interest">
-          <option value="">-- Please choose an option --</option>
-          <option value="youth-programmes">Youth Programmes</option>
-          <option value="volunteering">Volunteering / DofE</option>
-          <option value="community-support">Community Support</option>
-          <option value="employment-training">Employment / Training</option>
-          <option value="just-curious">Just want to learn more</option>
-        </select>
-
-        <label for="message">Additional Notes (optional)</label>
-        <textarea id="message" name="message" rows="4"></textarea>
-
-        <button type="submit" class="cta-button">Submit</button>
-      </form>
-
-      <div id="form-success" class="form-success hidden">
-  <h3>Thank you for getting in touch!</h3>
-  <p>We’ll be in touch soon — in the meantime, check us out on:</p>
-  <div class="social-buttons">
-    <a href="https://www.facebook.com/roevalley.residents/" target="_blank" rel="noopener noreferrer">Facebook</a> |
-    <a href="https://www.instagram.com/rvralimavady/" target="_blank" rel="noopener noreferrer">Instagram</a> |
-    <a href="https://x.com/rvra_limavady" target="_blank" rel="noopener noreferrer">Twitter</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <img src="images/rvra-logos/rvra-logo.png" alt="RVRA Logo" />
+      <div class="logo-text"><strong>Roe Valley</strong><span>Residents Association</span></div>
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="our-projects.html">Projects</a></li>
+        <li><a href="our-team.html">Our Team</a></li>
+        <li><a href="facilities.html">Facilities</a></li>
+        <li><a href="news-and-events.html">News &amp; Events</a></li>
+        <li><a href="get-involved.html" class="nav-cta active">Get Involved</a></li>
+      </ul>
+    </nav>
+    <button class="mobile-menu-btn" aria-label="Open menu" onclick="openMenu()"><span></span><span></span><span></span></button>
   </div>
-</div>
+</header>
+<nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+  <button class="close-btn" aria-label="Close menu" onclick="closeMenu()">&times;</button>
+  <ul>
+    <li><a href="index.html" onclick="closeMenu()">Home</a></li>
+    <li><a href="about-us.html" onclick="closeMenu()">About Us</a></li>
+    <li><a href="our-projects.html" onclick="closeMenu()">Projects</a></li>
+    <li><a href="our-team.html" onclick="closeMenu()">Our Team</a></li>
+    <li><a href="facilities.html" onclick="closeMenu()">Facilities</a></li>
+    <li><a href="news-and-events.html" onclick="closeMenu()">News &amp; Events</a></li>
+    <li><a href="get-involved.html" onclick="closeMenu()">Get Involved</a></li>
+  </ul>
+</nav>
 
+<nav class="breadcrumb"><a href="index.html">Home</a> <span>›</span> Get Involved</nav>
+
+<section class="page-hero green">
+  <span class="section-label white">Join Us</span>
+  <h1>Get Involved</h1>
+  <p>There's something here for everyone — whether you want to join a programme, volunteer your time, or simply find out what we can do for you.</p>
+</section>
+
+<!-- Ways to get involved -->
+<section class="section">
+  <div class="container">
+    <div class="section-header text-center">
+      <span class="section-label">How to Join</span>
+      <h2>Three Ways to Get Started</h2>
     </div>
-  </main>
+    <div class="involve-options">
+      <div class="involve-card">
+        <div class="icon-circle">🙋</div>
+        <h3>Self-Refer</h3>
+        <p>Fill in our short form below and we'll match you to the right programme or support for your needs.</p>
+      </div>
+      <div class="involve-card green-top">
+        <div class="icon-circle" style="background:#eaf3d8;">🤝</div>
+        <h3>Volunteer</h3>
+        <p>Give your time, share your skills, and make a real difference to people right here in Limavady.</p>
+      </div>
+      <div class="involve-card yg-top">
+        <div class="icon-circle" style="background:#f5f8d8;">📞</div>
+        <h3>Just Get in Touch</h3>
+        <p>Not sure where to start? Give us a call or drop in — we'll figure it out together over a cup of tea.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <div id="footer"></div>
-  <script src="scripts/includes.js"></script>
-  <script src="scripts/menu.js"></script>
+<!-- Self-referral form -->
+<section class="section form-section">
+  <div class="container">
+    <div class="form-wrapper" id="formWrapper">
+      <span class="section-label">Self-Referral</span>
+      <h2>Tell Us About Yourself</h2>
+      <p>Fill out this quick form to get connected with a project or find support that suits you. We'll be in touch shortly.</p>
+
+      <form class="referral-form" id="referralForm" novalidate>
+        <div class="form-group">
+          <label for="name">Full Name *</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required />
+        </div>
+        <div class="form-group">
+          <label for="age">Age *</label>
+          <input type="number" id="age" name="age" placeholder="Your age" min="5" max="110" required />
+        </div>
+        <div class="form-group">
+          <label for="contact">Email Address or Phone Number *</label>
+          <input type="text" id="contact" name="contact" placeholder="How can we reach you?" required />
+        </div>
+        <div class="form-group">
+          <label for="interest">What are you interested in?</label>
+          <select id="interest" name="interest">
+            <option value="">— Please choose an option —</option>
+            <option value="youth-programmes">Youth Programmes</option>
+            <option value="dofe">Duke of Edinburgh Award</option>
+            <option value="volunteering">Volunteering</option>
+            <option value="community-support">Community Support</option>
+            <option value="employment-training">Employment / Skills Training</option>
+            <option value="maries-fund">Marie's Beacon Fund</option>
+            <option value="just-curious">Just want to learn more</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Anything else you'd like us to know? (optional)</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell us a bit about your situation or what you're hoping to find..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit — Let's Go! 🎉</button>
+      </form>
+    </div>
+
+    <!-- Success state -->
+    <div class="form-wrapper hidden" id="formSuccess" aria-live="polite">
+      <div class="form-success">
+        <div style="font-size:3rem; margin-bottom:1rem;">🎉</div>
+        <h3>Thank You — We'll Be in Touch!</h3>
+        <p>Someone from the RVRA team will contact you soon. In the meantime, why not follow us on social media to stay up to date?</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/roevalley.residents/" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://www.instagram.com/rvralimavady/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://x.com/rvra_limavady" target="_blank" rel="noopener">X / Twitter</a>
+        </div>
+        <a href="our-projects.html" class="btn btn-outline-blue" style="margin-top:1.5rem;">Explore Our Projects</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact details -->
+<section class="section" style="background:var(--light-blue);">
+  <div class="container" style="text-align:center; max-width:700px;">
+    <span class="section-label">Prefer to Talk?</span>
+    <h2>Come Find Us</h2>
+    <p style="color:var(--text-muted);">Our doors are open and our team is friendly. Drop in, give us a ring, or send us an email — whatever works best for you.</p>
+    <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:1.5rem; margin-top:2rem; text-align:left;">
+      <div style="background:var(--white); border-radius:var(--radius); padding:1.5rem; border-left:4px solid var(--blue);">
+        <strong style="color:var(--blue);">Community House</strong>
+        <p style="color:var(--text-muted); margin-top:.4rem; font-size:.95rem;">13–14 Keady Way, Limavady, BT49 0AU</p>
+      </div>
+      <div style="background:var(--white); border-radius:var(--radius); padding:1.5rem; border-left:4px solid var(--green);">
+        <strong style="color:var(--green-dark);">Community Hub</strong>
+        <p style="color:var(--text-muted); margin-top:.4rem; font-size:.95rem;">Catherine Street, Limavady, BT49 0HQ</p>
+      </div>
+    </div>
+    <p style="margin-top:1.5rem; color:var(--text-muted);">📞 <a href="tel:02877769996" style="color:var(--blue); font-weight:700;">028 7776 9996</a> &nbsp;|&nbsp; 📧 <a href="mailto:info@rvra.org.uk" style="color:var(--blue); font-weight:700;">info@rvra.org.uk</a></p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><img src="images/rvra-logos/rvra-logo.png" alt="RVRA Logo" /><p>Empowering community in Limavady through inclusive support, creative programmes, and grassroots action.</p><div class="footer-socials"><a href="https://www.facebook.com/roevalley.residents/" target="_blank" rel="noopener">Facebook</a><a href="https://www.instagram.com/rvralimavady/" target="_blank" rel="noopener">Instagram</a><a href="https://x.com/rvra_limavady" target="_blank" rel="noopener">X / Twitter</a></div></div>
+      <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about-us.html">About Us</a></li><li><a href="our-story.html">Our Story</a></li><li><a href="our-team.html">Meet the Team</a></li></ul></div>
+      <div class="footer-col"><h4>Get Involved</h4><ul><li><a href="our-projects.html">Our Projects</a></li><li><a href="get-involved.html">Self-Refer</a></li><li><a href="get-involved.html">Volunteer</a></li><li><a href="maries-fund.html">Marie's Beacon Fund</a></li></ul></div>
+      <div class="footer-col"><h4>Contact Us</h4><ul><li><a href="facilities.html">Facilities &amp; Rooms</a></li><li><a href="news-and-events.html">News &amp; Events</a></li><li><a href="mailto:info@rvra.org.uk">info@rvra.org.uk</a></li><li><a href="tel:02877769996">028 7776 9996</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>&copy; 2025 Roe Valley Residents Association. Registered Charity.</span><span><a href="#">Privacy Policy</a> &nbsp;·&nbsp; <a href="#">Accessibility</a></span></div>
+  </div>
+</footer>
 
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-
 <script>
-  const form = document.getElementById("referralForm");
-  const successMessage = document.getElementById("form-success");
+  function openMenu()  { document.getElementById('mobileMenu').classList.add('open'); }
+  function closeMenu() { document.getElementById('mobileMenu').classList.remove('open'); }
 
-  form.addEventListener("submit", function (e) {
-    e.preventDefault(); // prevent actual submission
-    form.classList.add("hidden");
-    successMessage.classList.remove("hidden");
-
-    // 🎉 Confetti celebration
-    confetti({
-      particleCount: 100,
-      spread: 80,
-      origin: { y: 0.6 },
-    });
+  document.getElementById('referralForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    document.getElementById('formWrapper').classList.add('hidden');
+    document.getElementById('formSuccess').classList.remove('hidden');
+    window.scrollTo({ top: document.getElementById('formSuccess').offsetTop - 100, behavior: 'smooth' });
+    confetti({ particleCount: 120, spread: 90, origin: { y: 0.5 }, colors: ['#00a2ed','#88b437','#c3d011','#ffffff'] });
   });
 </script>
-
 </body>
 </html>
