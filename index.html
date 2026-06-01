@@ -134,15 +134,15 @@
   <div class="container">
     <div class="impact-grid">
       <div class="impact-item">
-        <div class="impact-num" data-target="1200">1200+</div>
+        <div class="impact-num">1200+</div>
         <div class="impact-label">People supported every year</div>
       </div>
       <div class="impact-item">
-        <div class="impact-num" data-target="25">25+</div>
+        <div class="impact-num">25+</div>
         <div class="impact-label">Years serving the community</div>
       </div>
       <div class="impact-item">
-        <div class="impact-num" data-target="80">80+</div>
+        <div class="impact-num">80+</div>
         <div class="impact-label">Dedicated volunteers</div>
       </div>
     </div>
@@ -343,7 +343,7 @@
   function closeMenu() { document.getElementById('mobileMenu').classList.remove('open'); }
 
   var cIdx=0,cTotal=3;
-  function carouselGo(n){cIdx=n;document.getElementById('carouselSlides').style.transform='translateX(-'+(cIdx*100)+'%)';document.querySelectorAll('.carousel-dot').forEach(function(d,i){d.classList.toggle('active',i===cIdx);});}
+  function carouselGo(n){cIdx=n;document.getElementById('carouselSlides').style.transform='translateX(-'+(cIdx*33.333)+'%)';document.querySelectorAll('.carousel-dot').forEach(function(d,i){d.classList.toggle('active',i===cIdx);});}
   function carouselMove(dir){carouselGo((cIdx+dir+cTotal)%cTotal);}
   setInterval(function(){carouselMove(1);},5000);
   var swipeX=0,sl=document.getElementById('carouselSlides');
