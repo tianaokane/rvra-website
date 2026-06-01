@@ -9,7 +9,7 @@ The website shares information about RVRA’s projects, facilities, events, team
 The site is hosted using **GitHub Pages**.
 
 **Live site:**
-`https://your-github-username.github.io/your-repository-name/`
+`https://tianaokane.github.io/rvra-website/`
 
 Replace the link above with the final GitHub Pages URL.
 
